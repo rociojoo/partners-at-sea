@@ -13,15 +13,11 @@ description: "Characterizing dyadic joing movement in world fisheries"
 
 <!-- # Introduction -->
 
-<center>
-![](images/plot-ptm-1.png){width=40%}
-</center>
+
+# Abstract of the manuscript
 
 > **Note:** This is the companion website for the manuscript “Identifying partners at sea on contrasting fisheries around the world”,
 from Joo et al. 
-
-
-# Abstract of the manuscript
 
 The study of fisher collective behaviour by means of trajectory data has been neglected up to now. 
 As a first approach to characterising collective behaviour, here we aim at identifying partners at sea, defined by a couple of fishing vessels that move together during their time at sea, in six different fleets: 1) pelagic pair trawlers, 2) large bottom otter trawlers, 3) small bottom otter trawlers, 4) mid-water otter trawlers, all operating in the North-East Atlantic Ocean, 5) anchovy purse-seiners in the South-East Pacific Ocean, and 6) tuna purse-seiners in the Western Indian Ocean.
@@ -31,4 +27,12 @@ While this analysis was performed at the scale of tracks (roughly fishing trips)
 This work shows that there are collective tactics at least at a pairwise level in diverse fisheries in the world.
 
 <br />
+
+<center>
+![](images/plot-ptm-1.png){width=40%}
+</center>
+
+
+
+
 
