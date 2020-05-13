@@ -51,6 +51,8 @@ source(paste0(dossier.codes, 'dyad_classif.R')) # uses model for pair trawlers t
 
 ```
 
+These functions are [here](https://github.com/rociojoo/partners-at-sea/tree/master/R).
+
 ## Gaussian mixture modeling
 
 ```{r GMMs, include = TRUE, echo=TRUE, eval = FALSE}
