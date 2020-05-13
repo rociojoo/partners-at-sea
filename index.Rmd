@@ -1,0 +1,34 @@
+--- 
+title: "Identifying partners at sea on contrasting fisheries around the world"
+author: "Rocío Joo, Nicolas Bez, Marie-Pierre Etienne, Pablo Marin, Nicolas Goascoz, and Stéphanie Mahévas"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+# bibliography: ["Bibliography/referencesthese.bib"]
+# biblio-style: apalike
+link-citations: yes
+description: "Characterizing dyadic joing movement in world fisheries"
+---
+
+<!-- # Introduction -->
+
+<center>
+![](images/plot-ptm-1.png){width=40%}
+</center>
+
+> **Note:** This is the companion website for the manuscript “Identifying partners at sea on contrasting fisheries around the world”,
+from Joo et al. 
+
+
+# Abstract of the manuscript
+
+The study of fisher collective behaviour by means of trajectory data has been neglected up to now. 
+As a first approach to characterising collective behaviour, here we aim at identifying partners at sea, defined by a couple of fishing vessels that move together during their time at sea, in six different fleets: 1) pelagic pair trawlers, 2) large bottom otter trawlers, 3) small bottom otter trawlers, 4) mid-water otter trawlers, all operating in the North-East Atlantic Ocean, 5) anchovy purse-seiners in the South-East Pacific Ocean, and 6) tuna purse-seiners in the Western Indian Ocean.
+This type of behaviour is known to exist within pelagic pair trawlers. Since these vessels need to be in pairs for their fishing operations, in practice some of them decide to move together throughout their whole fishing trips, and others for only a segment of their trips. 
+To identify partners at sea, we used a heuristic approach based on joint-movement metrics and Gaussian mixture models. The models were first fitted on the pelagic pair trawlers as a training/validating set and then used on the other fleets. From all of these fisheries, only the tuna purse-seiners did not present partners at sea. 
+While this analysis was performed at the scale of tracks (roughly fishing trips), we then analysed the connections at the scale of vessels, and identified loyal partners, i.e. couples of vessels that would not move jointly with any other vessel. At a fleet scale, pelagic pair trawlers had the highest loyalty index. 
+This work shows that there are collective tactics at least at a pairwise level in diverse fisheries in the world.
+
+<br />
+
