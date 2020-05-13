@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Data processing and analysis | Identifying partners at sea on contrasting fisheries around the world</title>
+  <meta name="description" content="Characterizing dyadic joing movement in world fisheries" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Data processing and analysis | Identifying partners at sea on contrasting fisheries around the world" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Characterizing dyadic joing movement in world fisheries" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Data processing and analysis | Identifying partners at sea on contrasting fisheries around the world" />
+  
+  <meta name="twitter:description" content="Characterizing dyadic joing movement in world fisheries" />
+  
+
+<meta name="author" content="Rocío Joo, Nicolas Bez, Marie-Pierre Etienne, Pablo Marin, Nicolas Goascoz, and Stéphanie Mahévas" />
+
+
+<meta name="date" content="2020-05-13" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="supplementary-results.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Abstract of the manuscript</a></li>
+<li class="chapter" data-level="2" data-path="data-processing-and-analysis.html"><a href="data-processing-and-analysis.html"><i class="fa fa-check"></i><b>2</b> Data processing and analysis</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-processing-and-analysis.html"><a href="data-processing-and-analysis.html#setting-up-configuration-previous-to-the-analysis"><i class="fa fa-check"></i><b>2.1</b> Setting up configuration previous to the analysis</a></li>
+<li class="chapter" data-level="2.2" data-path="data-processing-and-analysis.html"><a href="data-processing-and-analysis.html#gaussian-mixture-modeling"><i class="fa fa-check"></i><b>2.2</b> Gaussian mixture modeling</a></li>
+<li class="chapter" data-level="2.3" data-path="data-processing-and-analysis.html"><a href="data-processing-and-analysis.html#classifying-the-dyads-of-the-other-fleets"><i class="fa fa-check"></i><b>2.3</b> Classifying the dyads of the other fleets</a></li>
+<li class="chapter" data-level="2.4" data-path="data-processing-and-analysis.html"><a href="data-processing-and-analysis.html#plots-and-animations-of-dyads-tracks-and-time-series-and-network-graphs"><i class="fa fa-check"></i><b>2.4</b> Plots and animations of dyad’s tracks and time series, and network graphs</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="supplementary-results.html"><a href="supplementary-results.html"><i class="fa fa-check"></i><b>3</b> Supplementary results</a><ul>
+<li class="chapter" data-level="3.1" data-path="supplementary-results.html"><a href="supplementary-results.html#pelagic-pair-trawlers"><i class="fa fa-check"></i><b>3.1</b> Pelagic pair trawlers</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="supplementary-results.html"><a href="supplementary-results.html#group-1-most-representative-example"><i class="fa fa-check"></i><b>3.1.1</b> Group 1: most representative example</a></li>
+<li class="chapter" data-level="3.1.2" data-path="supplementary-results.html"><a href="supplementary-results.html#group-2-most-representative-example"><i class="fa fa-check"></i><b>3.1.2</b> Group 2: most representative example</a></li>
+<li class="chapter" data-level="3.1.3" data-path="supplementary-results.html"><a href="supplementary-results.html#group-3-most-representative-example"><i class="fa fa-check"></i><b>3.1.3</b> Group 3: most representative example</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="supplementary-results.html"><a href="supplementary-results.html#large-bottom-otter-trawlers"><i class="fa fa-check"></i><b>3.2</b> Large bottom otter trawlers</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="supplementary-results.html"><a href="supplementary-results.html#group-1-most-representative-example-1"><i class="fa fa-check"></i><b>3.2.1</b> Group 1: most representative example</a></li>
+<li class="chapter" data-level="3.2.2" data-path="supplementary-results.html"><a href="supplementary-results.html#group-2-most-representative-example-1"><i class="fa fa-check"></i><b>3.2.2</b> Group 2: most representative example</a></li>
+<li class="chapter" data-level="3.2.3" data-path="supplementary-results.html"><a href="supplementary-results.html#group-3-most-representative-example-1"><i class="fa fa-check"></i><b>3.2.3</b> Group 3: most representative example</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="supplementary-results.html"><a href="supplementary-results.html#small-bottom-otter-trawlers"><i class="fa fa-check"></i><b>3.3</b> Small bottom otter trawlers</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="supplementary-results.html"><a href="supplementary-results.html#group-1-most-representative-example-2"><i class="fa fa-check"></i><b>3.3.1</b> Group 1: most representative example</a></li>
+<li class="chapter" data-level="3.3.2" data-path="supplementary-results.html"><a href="supplementary-results.html#group-2-most-representative-example-2"><i class="fa fa-check"></i><b>3.3.2</b> Group 2: most representative example</a></li>
+<li class="chapter" data-level="3.3.3" data-path="supplementary-results.html"><a href="supplementary-results.html#group-3-most-representative-example-2"><i class="fa fa-check"></i><b>3.3.3</b> Group 3: most representative example</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="supplementary-results.html"><a href="supplementary-results.html#mid-water-otter-trawlers"><i class="fa fa-check"></i><b>3.4</b> Mid-water otter trawlers</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="supplementary-results.html"><a href="supplementary-results.html#group-1-most-representative-example-3"><i class="fa fa-check"></i><b>3.4.1</b> Group 1: most representative example</a></li>
+<li class="chapter" data-level="3.4.2" data-path="supplementary-results.html"><a href="supplementary-results.html#group-2-most-representative-example-3"><i class="fa fa-check"></i><b>3.4.2</b> Group 2: most representative example</a></li>
+<li class="chapter" data-level="3.4.3" data-path="supplementary-results.html"><a href="supplementary-results.html#group-3-most-representative-example-3"><i class="fa fa-check"></i><b>3.4.3</b> Group 3: most representative example</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="supplementary-results.html"><a href="supplementary-results.html#anchovy-purse-seiners"><i class="fa fa-check"></i><b>3.5</b> Anchovy purse-seiners</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="supplementary-results.html"><a href="supplementary-results.html#group-1-most-representative-example-4"><i class="fa fa-check"></i><b>3.5.1</b> Group 1: most representative example</a></li>
+<li class="chapter" data-level="3.5.2" data-path="supplementary-results.html"><a href="supplementary-results.html#group-2-most-representative-example-4"><i class="fa fa-check"></i><b>3.5.2</b> Group 2: most representative example</a></li>
+<li class="chapter" data-level="3.5.3" data-path="supplementary-results.html"><a href="supplementary-results.html#group-3-most-representative-example-4"><i class="fa fa-check"></i><b>3.5.3</b> Group 3: most representative example</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="supplementary-results.html"><a href="supplementary-results.html#tuna-purse-seiners"><i class="fa fa-check"></i><b>3.6</b> Tuna purse-seiners</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="supplementary-results.html"><a href="supplementary-results.html#group-2-most-representative-example-5"><i class="fa fa-check"></i><b>3.6.1</b> Group 2: most representative example</a></li>
+<li class="chapter" data-level="3.6.2" data-path="supplementary-results.html"><a href="supplementary-results.html#group-3-most-representative-example-5"><i class="fa fa-check"></i><b>3.6.2</b> Group 3: most representative example</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Identifying partners at sea on contrasting fisheries around the world</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-processing-and-analysis" class="section level1">
+<h1><span class="header-section-number">2</span> Data processing and analysis</h1>
+<p>Due to the large volumes of data involved, and confidentiality agreements for
+the majority of the data, we will share the codes starting when the metrics for the dyads have already been computed.
+The data shared in this repository are only at the scale of dyads, and not locations.</p>
+<div id="setting-up-configuration-previous-to-the-analysis" class="section level2">
+<h2><span class="header-section-number">2.1</span> Setting up configuration previous to the analysis</h2>
+<p>Calling packages, setting up data, auxiliary code, stats and figure paths, and sourcing functions:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="data-processing-and-analysis.html#cb1-1"></a>knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">echo =</span> <span class="ot">FALSE</span>, <span class="dt">warning =</span> <span class="ot">FALSE</span>, <span class="dt">message =</span> <span class="ot">FALSE</span>)</span>
+<span id="cb1-2"><a href="data-processing-and-analysis.html#cb1-2"></a><span class="kw">library</span>(lubridate) <span class="co"># date function</span></span></code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;lubridate&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:base&#39;:
+## 
+##     date</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="data-processing-and-analysis.html#cb4-1"></a><span class="kw">library</span>(magrittr) <span class="co"># pipes</span></span>
+<span id="cb4-2"><a href="data-processing-and-analysis.html#cb4-2"></a><span class="kw">library</span>(stringr) <span class="co">#str_replace_all</span></span>
+<span id="cb4-3"><a href="data-processing-and-analysis.html#cb4-3"></a><span class="kw">library</span>(ggplot2) </span></code></pre></div>
+<pre><code>## Need help getting started? Try the cookbook for R:
+## http://www.cookbook-r.com/Graphs/</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="data-processing-and-analysis.html#cb6-1"></a><span class="kw">library</span>(xtable)</span>
+<span id="cb6-2"><a href="data-processing-and-analysis.html#cb6-2"></a><span class="kw">library</span>(maps) <span class="co"># get background</span></span>
+<span id="cb6-3"><a href="data-processing-and-analysis.html#cb6-3"></a><span class="kw">library</span>(maptools) <span class="co"># map2SpatialPolygons</span></span></code></pre></div>
+<pre><code>## Loading required package: sp</code></pre>
+<pre><code>## Checking rgeos availability: TRUE</code></pre>
+<pre><code>## 
+## Attaching package: &#39;maptools&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:xtable&#39;:
+## 
+##     label</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="data-processing-and-analysis.html#cb11-1"></a><span class="kw">library</span>(mapdata) <span class="co"># worldHires</span></span>
+<span id="cb11-2"><a href="data-processing-and-analysis.html#cb11-2"></a><span class="kw">library</span>(animation) <span class="co"># videos</span></span>
+<span id="cb11-3"><a href="data-processing-and-analysis.html#cb11-3"></a><span class="kw">library</span>(igraph) <span class="co"># network representation</span></span></code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;igraph&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:lubridate&#39;:
+## 
+##     %--%, union</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     decompose, spectrum</code></pre>
+<pre><code>## The following object is masked from &#39;package:base&#39;:
+## 
+##     union</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="data-processing-and-analysis.html#cb16-1"></a><span class="kw">library</span>(viridis)</span></code></pre></div>
+<pre><code>## Loading required package: viridisLite</code></pre>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="data-processing-and-analysis.html#cb18-1"></a><span class="kw">library</span>(dplyr) <span class="co"># filter, mutate</span></span></code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:igraph&#39;:
+## 
+##     as_data_frame, groups, union</code></pre>
+<pre><code>## The following objects are masked from &#39;package:lubridate&#39;:
+## 
+##     intersect, setdiff, union</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="data-processing-and-analysis.html#cb24-1"></a><span class="kw">library</span>(Rmixmod)</span></code></pre></div>
+<pre><code>## Loading required package: Rcpp</code></pre>
+<pre><code>## Rmixmod v. 2.1.2.2 / URI: www.mixmod.org</code></pre>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="data-processing-and-analysis.html#cb27-1"></a><span class="kw">library</span>(FactoMineR)</span>
+<span id="cb27-2"><a href="data-processing-and-analysis.html#cb27-2"></a><span class="kw">library</span>(parallel)</span>
+<span id="cb27-3"><a href="data-processing-and-analysis.html#cb27-3"></a><span class="kw">library</span>(tidyr) <span class="co"># gather</span></span></code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;tidyr&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:igraph&#39;:
+## 
+##     crossing</code></pre>
+<pre><code>## The following object is masked from &#39;package:magrittr&#39;:
+## 
+##     extract</code></pre>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="data-processing-and-analysis.html#cb31-1"></a><span class="kw">library</span>(mvtnorm) <span class="co"># for overlap index</span></span>
+<span id="cb31-2"><a href="data-processing-and-analysis.html#cb31-2"></a></span>
+<span id="cb31-3"><a href="data-processing-and-analysis.html#cb31-3"></a>dossier.data.outputs &lt;-<span class="st"> &#39;./DataOutputs/&#39;</span> </span>
+<span id="cb31-4"><a href="data-processing-and-analysis.html#cb31-4"></a>dossier.stats.outputs &lt;-<span class="st"> &#39;./StatsPlots/&#39;</span> </span>
+<span id="cb31-5"><a href="data-processing-and-analysis.html#cb31-5"></a>dossier.codes &lt;-<span class="st"> &#39;./R/&#39;</span></span>
+<span id="cb31-6"><a href="data-processing-and-analysis.html#cb31-6"></a></span>
+<span id="cb31-7"><a href="data-processing-and-analysis.html#cb31-7"></a></span>
+<span id="cb31-8"><a href="data-processing-and-analysis.html#cb31-8"></a></span>
+<span id="cb31-9"><a href="data-processing-and-analysis.html#cb31-9"></a><span class="kw">source</span>(<span class="kw">paste0</span>(dossier.codes, <span class="st">&#39;dyad_info_general_allgears.r&#39;</span>)) <span class="co"># get summary of dyads</span></span>
+<span id="cb31-10"><a href="data-processing-and-analysis.html#cb31-10"></a><span class="kw">source</span>(<span class="kw">paste0</span>(dossier.codes, <span class="st">&#39;pre_video_modif_allgears.r&#39;</span>)) <span class="co"># get data into format for video functions</span></span>
+<span id="cb31-11"><a href="data-processing-and-analysis.html#cb31-11"></a><span class="kw">source</span>(<span class="kw">paste0</span>(dossier.codes, <span class="st">&#39;VideoHtmlDyadAllGears.r&#39;</span>)) <span class="co"># get animation in html</span></span>
+<span id="cb31-12"><a href="data-processing-and-analysis.html#cb31-12"></a><span class="kw">source</span>(<span class="kw">paste0</span>(dossier.codes, <span class="st">&#39;VideoGIFDyadAllGears.R&#39;</span>)) <span class="co"># get animation in gif</span></span>
+<span id="cb31-13"><a href="data-processing-and-analysis.html#cb31-13"></a><span class="kw">source</span>(<span class="kw">paste0</span>(dossier.codes, <span class="st">&#39;plot_dyad_general_allgears.R&#39;</span>)) <span class="co"># plot tracks</span></span>
+<span id="cb31-14"><a href="data-processing-and-analysis.html#cb31-14"></a><span class="kw">source</span>(<span class="kw">paste0</span>(dossier.codes, <span class="st">&#39;subplot_uni.r&#39;</span>)) <span class="co"># plot metric time series</span></span>
+<span id="cb31-15"><a href="data-processing-and-analysis.html#cb31-15"></a><span class="kw">source</span>(<span class="kw">paste0</span>(dossier.codes, <span class="st">&#39;PlotVideoDyadsGMM.R&#39;</span>)) <span class="co"># general function to plot and animate, using functions above</span></span>
+<span id="cb31-16"><a href="data-processing-and-analysis.html#cb31-16"></a><span class="kw">source</span>(<span class="kw">paste0</span>(dossier.codes, <span class="st">&#39;FleetStats-AllGears.r&#39;</span>)) <span class="co"># get fleet stats and network graph</span></span>
+<span id="cb31-17"><a href="data-processing-and-analysis.html#cb31-17"></a><span class="kw">source</span>(<span class="kw">paste0</span>(dossier.codes, <span class="st">&#39;stats_clusters.R&#39;</span>)) <span class="co"># get general statistics of groups</span></span>
+<span id="cb31-18"><a href="data-processing-and-analysis.html#cb31-18"></a><span class="kw">source</span>(<span class="kw">paste0</span>(dossier.codes, <span class="st">&#39;dyad_classif.R&#39;</span>)) <span class="co"># uses model for pair trawlers to classify the dyads from the other fleets and produce graphs</span></span></code></pre></div>
+<p>These functions are <a href="https://github.com/rociojoo/partners-at-sea/tree/master/R">here</a>.</p>
+</div>
+<div id="gaussian-mixture-modeling" class="section level2">
+<h2><span class="header-section-number">2.2</span> Gaussian mixture modeling</h2>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="data-processing-and-analysis.html#cb32-1"></a><span class="kw">load</span>(<span class="kw">paste0</span>(dossier.data.outputs, <span class="st">&quot;all_dyads.RData&quot;</span>)) <span class="co"># dyads and metrics</span></span>
+<span id="cb32-2"><a href="data-processing-and-analysis.html#cb32-2"></a></span>
+<span id="cb32-3"><a href="data-processing-and-analysis.html#cb32-3"></a>variables &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Prox&quot;</span>, <span class="st">&quot;DI.theta&quot;</span>, <span class="st">&quot;DI.d&quot;</span>)</span>
+<span id="cb32-4"><a href="data-processing-and-analysis.html#cb32-4"></a>gear &lt;-<span class="st"> &quot;all&quot;</span></span>
+<span id="cb32-5"><a href="data-processing-and-analysis.html#cb32-5"></a></span>
+<span id="cb32-6"><a href="data-processing-and-analysis.html#cb32-6"></a><span class="co"># just PTM and variables for analysis</span></span>
+<span id="cb32-7"><a href="data-processing-and-analysis.html#cb32-7"></a>dyads <span class="op">%&gt;%</span><span class="st">  </span><span class="kw">filter</span>(gear<span class="fl">.1</span> <span class="op">==</span><span class="st"> &quot;PTM&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(variables) -&gt;<span class="st"> </span>dta</span>
+<span id="cb32-8"><a href="data-processing-and-analysis.html#cb32-8"></a></span>
+<span id="cb32-9"><a href="data-processing-and-analysis.html#cb32-9"></a><span class="co">##################### GMM estimation ####################################</span></span>
+<span id="cb32-10"><a href="data-processing-and-analysis.html#cb32-10"></a></span>
+<span id="cb32-11"><a href="data-processing-and-analysis.html#cb32-11"></a><span class="co"># specifying some parameters for the GMM parameter estimation</span></span>
+<span id="cb32-12"><a href="data-processing-and-analysis.html#cb32-12"></a>strat &lt;-</span>
+<span id="cb32-13"><a href="data-processing-and-analysis.html#cb32-13"></a><span class="kw">mixmodStrategy</span>(<span class="dt">algo =</span> <span class="st">&quot;EM&quot;</span>, <span class="dt">initMethod =</span> <span class="st">&quot;smallEM&quot;</span>)</span>
+<span id="cb32-14"><a href="data-processing-and-analysis.html#cb32-14"></a></span>
+<span id="cb32-15"><a href="data-processing-and-analysis.html#cb32-15"></a><span class="co"># Calculate the number of cores</span></span>
+<span id="cb32-16"><a href="data-processing-and-analysis.html#cb32-16"></a>free_cores &lt;-<span class="st"> </span><span class="dv">2</span></span>
+<span id="cb32-17"><a href="data-processing-and-analysis.html#cb32-17"></a>no_cores &lt;-<span class="st"> </span><span class="kw">detectCores</span>() <span class="op">-</span><span class="st"> </span>free_cores <span class="co"># leave 4 free</span></span>
+<span id="cb32-18"><a href="data-processing-and-analysis.html#cb32-18"></a><span class="co"># Initiate cluster</span></span>
+<span id="cb32-19"><a href="data-processing-and-analysis.html#cb32-19"></a>cl &lt;-<span class="st"> </span><span class="kw">makeCluster</span>(no_cores, <span class="dt">type =</span> <span class="st">&quot;FORK&quot;</span>)</span>
+<span id="cb32-20"><a href="data-processing-and-analysis.html#cb32-20"></a><span class="co"># Then parallel GMM with the 3 metrics, for 3 clusters</span></span>
+<span id="cb32-21"><a href="data-processing-and-analysis.html#cb32-21"></a>N_rep &lt;-<span class="st"> </span><span class="dv">30</span> <span class="co"># number of replicates</span></span>
+<span id="cb32-22"><a href="data-processing-and-analysis.html#cb32-22"></a>test &lt;-<span class="st"> </span><span class="kw">parLapply</span>(cl, <span class="dv">1</span><span class="op">:</span>N_rep, <span class="co"># 20 replicates</span></span>
+<span id="cb32-23"><a href="data-processing-and-analysis.html#cb32-23"></a><span class="cf">function</span>(x) {</span>
+<span id="cb32-24"><a href="data-processing-and-analysis.html#cb32-24"></a>res1 &lt;-</span>
+<span id="cb32-25"><a href="data-processing-and-analysis.html#cb32-25"></a><span class="kw">mixmodCluster</span>(</span>
+<span id="cb32-26"><a href="data-processing-and-analysis.html#cb32-26"></a><span class="dt">data =</span> <span class="kw">as.data.frame</span>(dta[, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>]),</span>
+<span id="cb32-27"><a href="data-processing-and-analysis.html#cb32-27"></a><span class="dt">nbCluster =</span> <span class="dv">3</span>,</span>
+<span id="cb32-28"><a href="data-processing-and-analysis.html#cb32-28"></a><span class="dt">strategy =</span> strat,</span>
+<span id="cb32-29"><a href="data-processing-and-analysis.html#cb32-29"></a><span class="dt">criterion =</span> <span class="kw">c</span>(<span class="st">&quot;ICL&quot;</span>),</span>
+<span id="cb32-30"><a href="data-processing-and-analysis.html#cb32-30"></a><span class="dt">models =</span> <span class="kw">mixmodGaussianModel</span>(</span>
+<span id="cb32-31"><a href="data-processing-and-analysis.html#cb32-31"></a><span class="dt">family =</span> <span class="st">&quot;general&quot;</span>,</span>
+<span id="cb32-32"><a href="data-processing-and-analysis.html#cb32-32"></a><span class="dt">free.proportions =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb32-33"><a href="data-processing-and-analysis.html#cb32-33"></a><span class="dt">equal.proportions =</span> <span class="ot">FALSE</span>,</span>
+<span id="cb32-34"><a href="data-processing-and-analysis.html#cb32-34"></a><span class="dt">listModels =</span></span>
+<span id="cb32-35"><a href="data-processing-and-analysis.html#cb32-35"></a><span class="kw">c</span>(<span class="st">&quot;Gaussian_pk_Lk_Ck&quot;</span>)</span>
+<span id="cb32-36"><a href="data-processing-and-analysis.html#cb32-36"></a>)</span>
+<span id="cb32-37"><a href="data-processing-and-analysis.html#cb32-37"></a>)</span>
+<span id="cb32-38"><a href="data-processing-and-analysis.html#cb32-38"></a><span class="kw">return</span>(res1)</span>
+<span id="cb32-39"><a href="data-processing-and-analysis.html#cb32-39"></a>})</span>
+<span id="cb32-40"><a href="data-processing-and-analysis.html#cb32-40"></a><span class="kw">stopCluster</span>(cl)</span>
+<span id="cb32-41"><a href="data-processing-and-analysis.html#cb32-41"></a></span>
+<span id="cb32-42"><a href="data-processing-and-analysis.html#cb32-42"></a><span class="co"># choosing the best model from the replicates based on ICL</span></span>
+<span id="cb32-43"><a href="data-processing-and-analysis.html#cb32-43"></a>BestModel &lt;-</span>
+<span id="cb32-44"><a href="data-processing-and-analysis.html#cb32-44"></a>test[[<span class="kw">order</span>(<span class="kw">rapply</span>(test, <span class="cf">function</span>(x)</span>
+<span id="cb32-45"><a href="data-processing-and-analysis.html#cb32-45"></a>x<span class="op">@</span>bestResult<span class="op">@</span>criterionValue))[<span class="dv">2</span>]]]</span>
+<span id="cb32-46"><a href="data-processing-and-analysis.html#cb32-46"></a></span>
+<span id="cb32-47"><a href="data-processing-and-analysis.html#cb32-47"></a><span class="co"># saving the best model</span></span>
+<span id="cb32-48"><a href="data-processing-and-analysis.html#cb32-48"></a><span class="kw">saveRDS</span>(</span>
+<span id="cb32-49"><a href="data-processing-and-analysis.html#cb32-49"></a>BestModel,</span>
+<span id="cb32-50"><a href="data-processing-and-analysis.html#cb32-50"></a><span class="dt">file =</span> <span class="kw">paste0</span>(</span>
+<span id="cb32-51"><a href="data-processing-and-analysis.html#cb32-51"></a>dossier.stats.outputs,</span>
+<span id="cb32-52"><a href="data-processing-and-analysis.html#cb32-52"></a><span class="st">&#39;BestFreeModel-PTM-&#39;</span>,</span>
+<span id="cb32-53"><a href="data-processing-and-analysis.html#cb32-53"></a>gear,</span>
+<span id="cb32-54"><a href="data-processing-and-analysis.html#cb32-54"></a><span class="st">&#39;-&#39;</span>,</span>
+<span id="cb32-55"><a href="data-processing-and-analysis.html#cb32-55"></a><span class="kw">paste0</span>(variables, <span class="dt">collapse =</span> <span class="st">&#39;-&#39;</span>),</span>
+<span id="cb32-56"><a href="data-processing-and-analysis.html#cb32-56"></a><span class="st">&#39;.rds&#39;</span></span>
+<span id="cb32-57"><a href="data-processing-and-analysis.html#cb32-57"></a>)</span>
+<span id="cb32-58"><a href="data-processing-and-analysis.html#cb32-58"></a>)</span>
+<span id="cb32-59"><a href="data-processing-and-analysis.html#cb32-59"></a></span>
+<span id="cb32-60"><a href="data-processing-and-analysis.html#cb32-60"></a><span class="co">##################### Extracting output stats ####################################</span></span>
+<span id="cb32-61"><a href="data-processing-and-analysis.html#cb32-61"></a></span>
+<span id="cb32-62"><a href="data-processing-and-analysis.html#cb32-62"></a><span class="co"># now we are extracting variance values to compare the variance between clusters</span></span>
+<span id="cb32-63"><a href="data-processing-and-analysis.html#cb32-63"></a>var_par &lt;-<span class="st"> </span>BestModel<span class="op">@</span>bestResult<span class="op">@</span>parameters<span class="op">@</span>variance</span>
+<span id="cb32-64"><a href="data-processing-and-analysis.html#cb32-64"></a><span class="co"># var_par is a list with a number of elements equal to the number of clusters, and each element is a variance matrix for the metrics (for a given cluster)</span></span>
+<span id="cb32-65"><a href="data-processing-and-analysis.html#cb32-65"></a><span class="co"># we&#39;ll pay attention to the variances and not covariances, so we&#39;ll use the list to make a matrix where each column is a metric and each row is a cluster, and each element ij is the variance of the metric j in cluster i.</span></span>
+<span id="cb32-66"><a href="data-processing-and-analysis.html#cb32-66"></a>variances &lt;-</span>
+<span id="cb32-67"><a href="data-processing-and-analysis.html#cb32-67"></a><span class="kw">t</span>(<span class="kw">sapply</span>(BestModel<span class="op">@</span>bestResult<span class="op">@</span>parameters<span class="op">@</span>variance, <span class="cf">function</span>(mat_) {</span>
+<span id="cb32-68"><a href="data-processing-and-analysis.html#cb32-68"></a><span class="kw">diag</span>(mat_)</span>
+<span id="cb32-69"><a href="data-processing-and-analysis.html#cb32-69"></a>}))</span>
+<span id="cb32-70"><a href="data-processing-and-analysis.html#cb32-70"></a><span class="co"># we then get the minimum variance per metric accross clusters. And, now that I think about it, this is biased by the fact that not all variables are in the same range. DI.theta goes from -1 to 1.</span></span>
+<span id="cb32-71"><a href="data-processing-and-analysis.html#cb32-71"></a>minimal_var &lt;-<span class="st"> </span><span class="kw">apply</span>(variances, <span class="dv">2</span>, min)</span>
+<span id="cb32-72"><a href="data-processing-and-analysis.html#cb32-72"></a><span class="co"># now, how much is variance of each metric in each cluster is higher than the minimum variance of each metric throughout clusters?</span></span>
+<span id="cb32-73"><a href="data-processing-and-analysis.html#cb32-73"></a>ratio_var &lt;-<span class="st"> </span><span class="kw">sweep</span>(variances, <span class="dv">2</span>, <span class="dt">STATS =</span> minimal_var, <span class="dt">FUN =</span> <span class="st">&#39;/&#39;</span>)</span>
+<span id="cb32-74"><a href="data-processing-and-analysis.html#cb32-74"></a><span class="co"># another form of comparison can be done by using the variances (not covariances) and means to calculate the coefficients of variation</span></span>
+<span id="cb32-75"><a href="data-processing-and-analysis.html#cb32-75"></a>cv &lt;-<span class="st"> </span><span class="kw">sqrt</span>(<span class="kw">t</span>(</span>
+<span id="cb32-76"><a href="data-processing-and-analysis.html#cb32-76"></a><span class="kw">sapply</span>(BestModel<span class="op">@</span>bestResult<span class="op">@</span>parameters<span class="op">@</span>variance,</span>
+<span id="cb32-77"><a href="data-processing-and-analysis.html#cb32-77"></a><span class="cf">function</span>(mat_) {</span>
+<span id="cb32-78"><a href="data-processing-and-analysis.html#cb32-78"></a><span class="kw">diag</span>(mat_)</span>
+<span id="cb32-79"><a href="data-processing-and-analysis.html#cb32-79"></a>})</span>
+<span id="cb32-80"><a href="data-processing-and-analysis.html#cb32-80"></a>)) <span class="op">/</span><span class="st">  </span>BestModel<span class="op">@</span>bestResult<span class="op">@</span>parameters<span class="op">@</span>mean</span>
+<span id="cb32-81"><a href="data-processing-and-analysis.html#cb32-81"></a></span>
+<span id="cb32-82"><a href="data-processing-and-analysis.html#cb32-82"></a><span class="co"># saving these results</span></span>
+<span id="cb32-83"><a href="data-processing-and-analysis.html#cb32-83"></a>cluster.file =<span class="st"> </span><span class="kw">paste0</span>(</span>
+<span id="cb32-84"><a href="data-processing-and-analysis.html#cb32-84"></a>dossier.stats.outputs,</span>
+<span id="cb32-85"><a href="data-processing-and-analysis.html#cb32-85"></a><span class="st">&#39;cluster_var_PTM_&#39;</span>,</span>
+<span id="cb32-86"><a href="data-processing-and-analysis.html#cb32-86"></a>gear,</span>
+<span id="cb32-87"><a href="data-processing-and-analysis.html#cb32-87"></a><span class="st">&#39;-&#39;</span>,</span>
+<span id="cb32-88"><a href="data-processing-and-analysis.html#cb32-88"></a><span class="kw">paste</span>(<span class="kw">str_replace_all</span>(variables, <span class="st">&quot;[[:punct:]]&quot;</span>, <span class="st">&quot;&quot;</span>), <span class="dt">collapse =</span> <span class="st">&#39;-&#39;</span>),</span>
+<span id="cb32-89"><a href="data-processing-and-analysis.html#cb32-89"></a><span class="st">&#39;.txt&#39;</span></span>
+<span id="cb32-90"><a href="data-processing-and-analysis.html#cb32-90"></a>)</span>
+<span id="cb32-91"><a href="data-processing-and-analysis.html#cb32-91"></a><span class="kw">sink</span>(cluster.file)</span>
+<span id="cb32-92"><a href="data-processing-and-analysis.html#cb32-92"></a><span class="kw">cat</span>(<span class="st">&quot;Number of clusters: &quot;</span>, BestModel<span class="op">@</span>bestResult<span class="op">@</span>nbCluster, <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-93"><a href="data-processing-and-analysis.html#cb32-93"></a><span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-94"><a href="data-processing-and-analysis.html#cb32-94"></a><span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-95"><a href="data-processing-and-analysis.html#cb32-95"></a><span class="kw">cat</span>(<span class="st">&quot;Metric variances: &quot;</span>, <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-96"><a href="data-processing-and-analysis.html#cb32-96"></a><span class="kw">print</span>(variances)</span>
+<span id="cb32-97"><a href="data-processing-and-analysis.html#cb32-97"></a><span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-98"><a href="data-processing-and-analysis.html#cb32-98"></a><span class="kw">cat</span>(<span class="st">&quot;Ratios: &quot;</span>, <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-99"><a href="data-processing-and-analysis.html#cb32-99"></a><span class="kw">print</span>(ratio_var)</span>
+<span id="cb32-100"><a href="data-processing-and-analysis.html#cb32-100"></a><span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-101"><a href="data-processing-and-analysis.html#cb32-101"></a><span class="kw">cat</span>(<span class="st">&quot;CV: &quot;</span>, <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-102"><a href="data-processing-and-analysis.html#cb32-102"></a><span class="kw">print</span>(cv)</span>
+<span id="cb32-103"><a href="data-processing-and-analysis.html#cb32-103"></a><span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-104"><a href="data-processing-and-analysis.html#cb32-104"></a><span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-105"><a href="data-processing-and-analysis.html#cb32-105"></a><span class="kw">sink</span>()</span>
+<span id="cb32-106"><a href="data-processing-and-analysis.html#cb32-106"></a></span>
+<span id="cb32-107"><a href="data-processing-and-analysis.html#cb32-107"></a><span class="co"># adding the cluster classification and associated probability to the PTM df</span></span>
+<span id="cb32-108"><a href="data-processing-and-analysis.html#cb32-108"></a>dta <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(</span>
+<span id="cb32-109"><a href="data-processing-and-analysis.html#cb32-109"></a><span class="dt">clust_prox =</span> <span class="kw">factor</span>(BestModel<span class="op">@</span>bestResult<span class="op">@</span>partition),</span>
+<span id="cb32-110"><a href="data-processing-and-analysis.html#cb32-110"></a><span class="dt">p_cluster =</span> <span class="kw">apply</span>(BestModel<span class="op">@</span>bestResult<span class="op">@</span>proba, <span class="dv">1</span>, max)</span>
+<span id="cb32-111"><a href="data-processing-and-analysis.html#cb32-111"></a>) -&gt;<span class="st"> </span>dta</span>
+<span id="cb32-112"><a href="data-processing-and-analysis.html#cb32-112"></a></span>
+<span id="cb32-113"><a href="data-processing-and-analysis.html#cb32-113"></a><span class="co"># overlapping index</span></span>
+<span id="cb32-114"><a href="data-processing-and-analysis.html#cb32-114"></a>mean_variance<span class="op">$</span>means &lt;-<span class="st"> </span>BestModel<span class="op">@</span>bestResult<span class="op">@</span>parameters<span class="op">@</span>mean</span>
+<span id="cb32-115"><a href="data-processing-and-analysis.html#cb32-115"></a></span>
+<span id="cb32-116"><a href="data-processing-and-analysis.html#cb32-116"></a>mean_variance<span class="op">$</span>variance &lt;-<span class="st"> </span>BestModel<span class="op">@</span>bestResult<span class="op">@</span>parameters<span class="op">@</span>variance</span>
+<span id="cb32-117"><a href="data-processing-and-analysis.html#cb32-117"></a></span>
+<span id="cb32-118"><a href="data-processing-and-analysis.html#cb32-118"></a>means &lt;-<span class="st"> </span>mean_variance<span class="op">$</span>means</span>
+<span id="cb32-119"><a href="data-processing-and-analysis.html#cb32-119"></a>variances &lt;-<span class="st"> </span>mean_variance<span class="op">$</span>variance</span>
+<span id="cb32-120"><a href="data-processing-and-analysis.html#cb32-120"></a>delta &lt;-<span class="st"> </span><span class="fl">0.025</span> <span class="co"># pas de discrétisation des lois gaussiennes</span></span>
+<span id="cb32-121"><a href="data-processing-and-analysis.html#cb32-121"></a>x &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="op">-</span><span class="dv">1</span>, <span class="dv">2</span>, delta) <span class="co"># discrétisation de l&#39;[] de fluctuation +/- 1</span></span>
+<span id="cb32-122"><a href="data-processing-and-analysis.html#cb32-122"></a>y &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="op">-</span><span class="dv">1</span>, <span class="dv">2</span>, delta) <span class="co"># discrétisation de l&#39;[] de fluctuation +/- 1</span></span>
+<span id="cb32-123"><a href="data-processing-and-analysis.html#cb32-123"></a>z &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="op">-</span><span class="dv">1</span>, <span class="dv">2</span>, delta) <span class="co"># discrétisation de l&#39;[] de fluctuation +/- 1</span></span>
+<span id="cb32-124"><a href="data-processing-and-analysis.html#cb32-124"></a>grid &lt;-<span class="st"> </span><span class="kw">expand.grid</span>(x, y, z)</span>
+<span id="cb32-125"><a href="data-processing-and-analysis.html#cb32-125"></a>gaussian.overlap.trivar &lt;-</span>
+<span id="cb32-126"><a href="data-processing-and-analysis.html#cb32-126"></a><span class="kw">array</span>(<span class="ot">NA</span>, <span class="dt">dim =</span> <span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">3</span>), <span class="dt">dimnames =</span> <span class="kw">list</span>(<span class="kw">c</span>(<span class="st">&quot;c1&quot;</span>, <span class="st">&quot;c2&quot;</span>, <span class="st">&quot;c3&quot;</span>), <span class="kw">c</span>(<span class="st">&quot;c1&quot;</span>, <span class="st">&quot;c2&quot;</span>, <span class="st">&quot;c3&quot;</span>)))</span>
+<span id="cb32-127"><a href="data-processing-and-analysis.html#cb32-127"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">2</span>) {</span>
+<span id="cb32-128"><a href="data-processing-and-analysis.html#cb32-128"></a><span class="cf">for</span> (j <span class="cf">in</span> (i <span class="op">+</span><span class="st"> </span><span class="dv">1</span>)<span class="op">:</span><span class="dv">3</span>) {</span>
+<span id="cb32-129"><a href="data-processing-and-analysis.html#cb32-129"></a><span class="co">#i &lt;- 3 ; j &lt;- 2</span></span>
+<span id="cb32-130"><a href="data-processing-and-analysis.html#cb32-130"></a>p1 &lt;-</span>
+<span id="cb32-131"><a href="data-processing-and-analysis.html#cb32-131"></a><span class="kw">dmvnorm</span>(<span class="dt">x =</span> grid,</span>
+<span id="cb32-132"><a href="data-processing-and-analysis.html#cb32-132"></a><span class="dt">mean =</span> <span class="kw">t</span>(means[i, ]),</span>
+<span id="cb32-133"><a href="data-processing-and-analysis.html#cb32-133"></a><span class="dt">sigma =</span> variances[[i]]) <span class="co">### tri-Gaussian for cluster i</span></span>
+<span id="cb32-134"><a href="data-processing-and-analysis.html#cb32-134"></a>p2 &lt;-</span>
+<span id="cb32-135"><a href="data-processing-and-analysis.html#cb32-135"></a><span class="kw">dmvnorm</span>(<span class="dt">x =</span> grid,</span>
+<span id="cb32-136"><a href="data-processing-and-analysis.html#cb32-136"></a><span class="dt">mean =</span> <span class="kw">t</span>(means[j, ]),</span>
+<span id="cb32-137"><a href="data-processing-and-analysis.html#cb32-137"></a><span class="dt">sigma =</span> variances[[j]]) <span class="co">### tri-Gaussian for cluster j</span></span>
+<span id="cb32-138"><a href="data-processing-and-analysis.html#cb32-138"></a>gaussian.overlap.trivar[i, j] &lt;-</span>
+<span id="cb32-139"><a href="data-processing-and-analysis.html#cb32-139"></a><span class="kw">sum</span>((p1 <span class="op">&lt;</span><span class="st"> </span>p2) <span class="op">*</span><span class="st"> </span>p1 <span class="op">+</span><span class="st"> </span>(p2 <span class="op">&lt;</span><span class="st"> </span>p1) <span class="op">*</span><span class="st"> </span>p2) <span class="op">*</span><span class="st"> </span>delta <span class="op">^</span><span class="st"> </span><span class="dv">3</span></span>
+<span id="cb32-140"><a href="data-processing-and-analysis.html#cb32-140"></a>}</span>
+<span id="cb32-141"><a href="data-processing-and-analysis.html#cb32-141"></a>}</span>
+<span id="cb32-142"><a href="data-processing-and-analysis.html#cb32-142"></a><span class="kw">print</span>(<span class="st">&quot;overlapping index&quot;</span>)</span>
+<span id="cb32-143"><a href="data-processing-and-analysis.html#cb32-143"></a><span class="kw">print</span>(gaussian.overlap.trivar)</span>
+<span id="cb32-144"><a href="data-processing-and-analysis.html#cb32-144"></a></span>
+<span id="cb32-145"><a href="data-processing-and-analysis.html#cb32-145"></a><span class="co">##################### Ordering clusters ####################################</span></span>
+<span id="cb32-146"><a href="data-processing-and-analysis.html#cb32-146"></a></span>
+<span id="cb32-147"><a href="data-processing-and-analysis.html#cb32-147"></a><span class="co"># Now, we need to find a way to automatically order the clusters by degree of joint movement.</span></span>
+<span id="cb32-148"><a href="data-processing-and-analysis.html#cb32-148"></a><span class="co"># For that, we will use the mean of the scaled and centered variables</span></span>
+<span id="cb32-149"><a href="data-processing-and-analysis.html#cb32-149"></a>mean_metrics &lt;-<span class="st"> </span>dta <span class="op">%&gt;%</span></span>
+<span id="cb32-150"><a href="data-processing-and-analysis.html#cb32-150"></a><span class="kw">mutate</span>(</span>
+<span id="cb32-151"><a href="data-processing-and-analysis.html#cb32-151"></a><span class="dt">prox_z =</span> <span class="kw">scale</span>(Prox, <span class="dt">center =</span> <span class="ot">TRUE</span>, <span class="dt">scale =</span> <span class="ot">TRUE</span>),</span>
+<span id="cb32-152"><a href="data-processing-and-analysis.html#cb32-152"></a><span class="dt">di_theta_z =</span> <span class="kw">scale</span>(DI.theta, <span class="dt">center =</span> <span class="ot">TRUE</span>, <span class="dt">scale =</span> <span class="ot">TRUE</span>),</span>
+<span id="cb32-153"><a href="data-processing-and-analysis.html#cb32-153"></a><span class="dt">di_d_z =</span> <span class="kw">scale</span>(DI.d, <span class="dt">center =</span> <span class="ot">TRUE</span>, <span class="dt">scale =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb32-154"><a href="data-processing-and-analysis.html#cb32-154"></a>) <span class="op">%&gt;%</span></span>
+<span id="cb32-155"><a href="data-processing-and-analysis.html#cb32-155"></a><span class="kw">group_by</span>(clust_prox) <span class="op">%&gt;%</span></span>
+<span id="cb32-156"><a href="data-processing-and-analysis.html#cb32-156"></a><span class="kw">summarise</span>(</span>
+<span id="cb32-157"><a href="data-processing-and-analysis.html#cb32-157"></a><span class="dt">m_prox_z =</span> <span class="kw">mean</span>(prox_z),</span>
+<span id="cb32-158"><a href="data-processing-and-analysis.html#cb32-158"></a><span class="dt">m_di_theta_z =</span> <span class="kw">mean</span>(di_theta_z),</span>
+<span id="cb32-159"><a href="data-processing-and-analysis.html#cb32-159"></a><span class="dt">m_di_d_z =</span> <span class="kw">mean</span>(di_d_z)</span>
+<span id="cb32-160"><a href="data-processing-and-analysis.html#cb32-160"></a>)</span>
+<span id="cb32-161"><a href="data-processing-and-analysis.html#cb32-161"></a></span>
+<span id="cb32-162"><a href="data-processing-and-analysis.html#cb32-162"></a>order_clust &lt;-</span>
+<span id="cb32-163"><a href="data-processing-and-analysis.html#cb32-163"></a><span class="st">  </span><span class="kw">order</span>(<span class="kw">apply</span>(mean_metrics[, <span class="dv">2</span><span class="op">:</span><span class="dv">4</span>], <span class="dv">1</span>, <span class="dt">FUN =</span> <span class="st">&quot;mean&quot;</span>), <span class="dt">decreasing =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb32-164"><a href="data-processing-and-analysis.html#cb32-164"></a>  </span>
+<span id="cb32-165"><a href="data-processing-and-analysis.html#cb32-165"></a>  <span class="co"># once we get the order in which clusters should be, we change the label of clusters so that 1 corresponds to high joint movement... and so on</span></span>
+<span id="cb32-166"><a href="data-processing-and-analysis.html#cb32-166"></a>  <span class="co"># the clust_prox column was a factor so let&#39;s first transform it into numeric</span></span>
+<span id="cb32-167"><a href="data-processing-and-analysis.html#cb32-167"></a>  dta<span class="op">$</span>clust_prox &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(<span class="kw">as.character</span>(dta<span class="op">$</span>clust_prox))</span>
+<span id="cb32-168"><a href="data-processing-and-analysis.html#cb32-168"></a>  </span>
+<span id="cb32-169"><a href="data-processing-and-analysis.html#cb32-169"></a>  <span class="co"># stock the old label into a vector so that we change things around in this vector</span></span>
+<span id="cb32-170"><a href="data-processing-and-analysis.html#cb32-170"></a>  new_order_vector &lt;-<span class="st"> </span>dta<span class="op">$</span>clust_prox</span>
+<span id="cb32-171"><a href="data-processing-and-analysis.html#cb32-171"></a>  </span>
+<span id="cb32-172"><a href="data-processing-and-analysis.html#cb32-172"></a>  <span class="co"># I could have done this one before: stock the number of clusters in an object</span></span>
+<span id="cb32-173"><a href="data-processing-and-analysis.html#cb32-173"></a>  k &lt;-<span class="st"> </span><span class="kw">length</span>(<span class="kw">unique</span>(new_order_vector))</span>
+<span id="cb32-174"><a href="data-processing-and-analysis.html#cb32-174"></a>  <span class="co"># for each &#39;new label&#39;, we get its corresponding old label, then search in the old column for those observations and change them for the new label in the new vector</span></span>
+<span id="cb32-175"><a href="data-processing-and-analysis.html#cb32-175"></a>  <span class="cf">for</span> (cl <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>k) {</span>
+<span id="cb32-176"><a href="data-processing-and-analysis.html#cb32-176"></a>  new_order_vector[<span class="kw">which</span>(dta<span class="op">$</span>clust_prox <span class="op">==</span><span class="st"> </span>order_clust[cl])] &lt;-<span class="st"> </span>cl</span>
+<span id="cb32-177"><a href="data-processing-and-analysis.html#cb32-177"></a>  }</span>
+<span id="cb32-178"><a href="data-processing-and-analysis.html#cb32-178"></a>  <span class="co"># then add a new column to the df with the new order</span></span>
+<span id="cb32-179"><a href="data-processing-and-analysis.html#cb32-179"></a>  dta<span class="op">$</span>clust_new_order &lt;-<span class="st"> </span>new_order_vector</span>
+<span id="cb32-180"><a href="data-processing-and-analysis.html#cb32-180"></a>  <span class="co"># and add a column that is a factor of that</span></span>
+<span id="cb32-181"><a href="data-processing-and-analysis.html#cb32-181"></a>  dta<span class="op">$</span>group &lt;-<span class="st"> </span><span class="kw">as.factor</span>(dta<span class="op">$</span>clust_new_order)</span>
+<span id="cb32-182"><a href="data-processing-and-analysis.html#cb32-182"></a>  </span>
+<span id="cb32-183"><a href="data-processing-and-analysis.html#cb32-183"></a><span class="co">##################### Plots and stats ####################################</span></span>
+<span id="cb32-184"><a href="data-processing-and-analysis.html#cb32-184"></a>  </span>
+<span id="cb32-185"><a href="data-processing-and-analysis.html#cb32-185"></a>  <span class="co"># Now let&#39;s do some plots with the new order and save them as pdf (for resolution and vectorial graphics) and png (for quick views)</span></span>
+<span id="cb32-186"><a href="data-processing-and-analysis.html#cb32-186"></a>  <span class="co"># I&#39;m using viridis color palette since it should be colorblind friendly</span></span>
+<span id="cb32-187"><a href="data-processing-and-analysis.html#cb32-187"></a>  <span class="co"># First plot: first metric vs. second metric</span></span>
+<span id="cb32-188"><a href="data-processing-and-analysis.html#cb32-188"></a>  dta <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x =</span> dta[, <span class="dv">1</span>], <span class="dt">y =</span> dta[, <span class="dv">2</span>], <span class="dt">col =</span> group)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&#39;Prox&#39;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&#39;DItheta&#39;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">scale_colour_viridis_d</span>() <span class="op">+</span><span class="st"> </span><span class="kw">theme_bw</span>()</span>
+<span id="cb32-189"><a href="data-processing-and-analysis.html#cb32-189"></a>  <span class="kw">ggsave</span>(</span>
+<span id="cb32-190"><a href="data-processing-and-analysis.html#cb32-190"></a>  <span class="kw">paste0</span>(</span>
+<span id="cb32-191"><a href="data-processing-and-analysis.html#cb32-191"></a>  dossier.stats.outputs,</span>
+<span id="cb32-192"><a href="data-processing-and-analysis.html#cb32-192"></a>  <span class="st">&quot;clustFree_Prox_DItheta_PTM_&quot;</span>,</span>
+<span id="cb32-193"><a href="data-processing-and-analysis.html#cb32-193"></a>  gear,</span>
+<span id="cb32-194"><a href="data-processing-and-analysis.html#cb32-194"></a>  <span class="st">&quot;_ordered.pdf&quot;</span></span>
+<span id="cb32-195"><a href="data-processing-and-analysis.html#cb32-195"></a>  )</span>
+<span id="cb32-196"><a href="data-processing-and-analysis.html#cb32-196"></a>  )</span>
+<span id="cb32-197"><a href="data-processing-and-analysis.html#cb32-197"></a>  <span class="kw">ggsave</span>(</span>
+<span id="cb32-198"><a href="data-processing-and-analysis.html#cb32-198"></a>  <span class="kw">paste0</span>(</span>
+<span id="cb32-199"><a href="data-processing-and-analysis.html#cb32-199"></a>  dossier.stats.outputs,</span>
+<span id="cb32-200"><a href="data-processing-and-analysis.html#cb32-200"></a>  <span class="st">&quot;clustFree_Prox_DItheta_PTM_&quot;</span>,</span>
+<span id="cb32-201"><a href="data-processing-and-analysis.html#cb32-201"></a>  gear,</span>
+<span id="cb32-202"><a href="data-processing-and-analysis.html#cb32-202"></a>  <span class="st">&quot;_ordered.png&quot;</span></span>
+<span id="cb32-203"><a href="data-processing-and-analysis.html#cb32-203"></a>  )</span>
+<span id="cb32-204"><a href="data-processing-and-analysis.html#cb32-204"></a>  )</span>
+<span id="cb32-205"><a href="data-processing-and-analysis.html#cb32-205"></a>  </span>
+<span id="cb32-206"><a href="data-processing-and-analysis.html#cb32-206"></a>  <span class="co"># First metric vs. third metric</span></span>
+<span id="cb32-207"><a href="data-processing-and-analysis.html#cb32-207"></a>  dta <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x =</span> dta[, <span class="dv">1</span>], <span class="dt">y =</span> dta[, <span class="dv">3</span>], <span class="dt">col =</span> group)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&#39;Prox&#39;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&#39;DId&#39;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">scale_colour_viridis_d</span>() <span class="op">+</span><span class="st"> </span><span class="kw">theme_bw</span>()</span>
+<span id="cb32-208"><a href="data-processing-and-analysis.html#cb32-208"></a>  <span class="kw">ggsave</span>(<span class="kw">paste0</span>(</span>
+<span id="cb32-209"><a href="data-processing-and-analysis.html#cb32-209"></a>  dossier.stats.outputs,</span>
+<span id="cb32-210"><a href="data-processing-and-analysis.html#cb32-210"></a>  <span class="st">&quot;clustFree_Prox_DId_PTM_&quot;</span>,</span>
+<span id="cb32-211"><a href="data-processing-and-analysis.html#cb32-211"></a>  gear,</span>
+<span id="cb32-212"><a href="data-processing-and-analysis.html#cb32-212"></a>  <span class="st">&quot;_ordered.pdf&quot;</span></span>
+<span id="cb32-213"><a href="data-processing-and-analysis.html#cb32-213"></a>  ))</span>
+<span id="cb32-214"><a href="data-processing-and-analysis.html#cb32-214"></a>  <span class="kw">ggsave</span>(<span class="kw">paste0</span>(</span>
+<span id="cb32-215"><a href="data-processing-and-analysis.html#cb32-215"></a>  dossier.stats.outputs,</span>
+<span id="cb32-216"><a href="data-processing-and-analysis.html#cb32-216"></a>  <span class="st">&quot;clustFree_Prox_DId_PTM_&quot;</span>,</span>
+<span id="cb32-217"><a href="data-processing-and-analysis.html#cb32-217"></a>  gear,</span>
+<span id="cb32-218"><a href="data-processing-and-analysis.html#cb32-218"></a>  <span class="st">&quot;_ordered.png&quot;</span></span>
+<span id="cb32-219"><a href="data-processing-and-analysis.html#cb32-219"></a>  ))</span>
+<span id="cb32-220"><a href="data-processing-and-analysis.html#cb32-220"></a>  </span>
+<span id="cb32-221"><a href="data-processing-and-analysis.html#cb32-221"></a>  <span class="co"># Now plotting distributions of probabilities per cluster</span></span>
+<span id="cb32-222"><a href="data-processing-and-analysis.html#cb32-222"></a>  <span class="kw">ggplot</span>(<span class="dt">data =</span> dta, <span class="kw">aes</span> (<span class="dt">x =</span> group, <span class="dt">y =</span> p_cluster, <span class="dt">fill =</span> group)) <span class="op">+</span></span>
+<span id="cb32-223"><a href="data-processing-and-analysis.html#cb32-223"></a><span class="st">  </span><span class="kw">geom_boxplot</span>() <span class="op">+</span></span>
+<span id="cb32-224"><a href="data-processing-and-analysis.html#cb32-224"></a><span class="st">  </span><span class="kw">scale_fill_viridis</span>(<span class="dt">discrete =</span> <span class="ot">TRUE</span>)  <span class="op">+</span></span>
+<span id="cb32-225"><a href="data-processing-and-analysis.html#cb32-225"></a><span class="st">  </span><span class="kw">theme_bw</span>() <span class="op">+</span></span>
+<span id="cb32-226"><a href="data-processing-and-analysis.html#cb32-226"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&#39;&#39;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;&quot;</span>) <span class="op">+</span></span>
+<span id="cb32-227"><a href="data-processing-and-analysis.html#cb32-227"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>, <span class="dt">text =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">18</span>))</span>
+<span id="cb32-228"><a href="data-processing-and-analysis.html#cb32-228"></a>  <span class="kw">ggsave</span>(<span class="kw">paste0</span>(</span>
+<span id="cb32-229"><a href="data-processing-and-analysis.html#cb32-229"></a>  dossier.stats.outputs,</span>
+<span id="cb32-230"><a href="data-processing-and-analysis.html#cb32-230"></a>  <span class="st">&quot;clustFree_proba_PTM_&quot;</span>,</span>
+<span id="cb32-231"><a href="data-processing-and-analysis.html#cb32-231"></a>  gear,</span>
+<span id="cb32-232"><a href="data-processing-and-analysis.html#cb32-232"></a>  <span class="st">&quot;_ordered.pdf&quot;</span></span>
+<span id="cb32-233"><a href="data-processing-and-analysis.html#cb32-233"></a>  ))</span>
+<span id="cb32-234"><a href="data-processing-and-analysis.html#cb32-234"></a>  <span class="kw">ggsave</span>(<span class="kw">paste0</span>(</span>
+<span id="cb32-235"><a href="data-processing-and-analysis.html#cb32-235"></a>  dossier.stats.outputs,</span>
+<span id="cb32-236"><a href="data-processing-and-analysis.html#cb32-236"></a>  <span class="st">&quot;clustFree_proba_PTM_&quot;</span>,</span>
+<span id="cb32-237"><a href="data-processing-and-analysis.html#cb32-237"></a>  gear,</span>
+<span id="cb32-238"><a href="data-processing-and-analysis.html#cb32-238"></a>  <span class="st">&quot;_ordered.png&quot;</span></span>
+<span id="cb32-239"><a href="data-processing-and-analysis.html#cb32-239"></a>  ))</span>
+<span id="cb32-240"><a href="data-processing-and-analysis.html#cb32-240"></a>  </span>
+<span id="cb32-241"><a href="data-processing-and-analysis.html#cb32-241"></a>  <span class="co"># calculating the percentage of PTM dyads in each cluster and then saving the information</span></span>
+<span id="cb32-242"><a href="data-processing-and-analysis.html#cb32-242"></a>  perc_table &lt;-<span class="st"> </span><span class="kw">round</span>(<span class="kw">prop.table</span>(<span class="kw">table</span>(dta<span class="op">$</span>group)) <span class="op">*</span><span class="st"> </span><span class="dv">100</span>, <span class="dv">1</span>)</span>
+<span id="cb32-243"><a href="data-processing-and-analysis.html#cb32-243"></a>  </span>
+<span id="cb32-244"><a href="data-processing-and-analysis.html#cb32-244"></a>  <span class="kw">sink</span>(cluster.file, <span class="dt">append =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb32-245"><a href="data-processing-and-analysis.html#cb32-245"></a>  <span class="kw">cat</span>(<span class="st">&quot;Order of old labels: &quot;</span>, <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-246"><a href="data-processing-and-analysis.html#cb32-246"></a>  <span class="kw">print</span>(order_clust)</span>
+<span id="cb32-247"><a href="data-processing-and-analysis.html#cb32-247"></a>  <span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-248"><a href="data-processing-and-analysis.html#cb32-248"></a>  <span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-249"><a href="data-processing-and-analysis.html#cb32-249"></a>  <span class="kw">cat</span>(<span class="st">&quot;Percentage of dyads in each ordered cluster: &quot;</span>, <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-250"><a href="data-processing-and-analysis.html#cb32-250"></a>  <span class="kw">print</span>(perc_table)</span>
+<span id="cb32-251"><a href="data-processing-and-analysis.html#cb32-251"></a>  <span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-252"><a href="data-processing-and-analysis.html#cb32-252"></a>  <span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb32-253"><a href="data-processing-and-analysis.html#cb32-253"></a>  <span class="kw">sink</span>()</span>
+<span id="cb32-254"><a href="data-processing-and-analysis.html#cb32-254"></a>  </span>
+<span id="cb32-255"><a href="data-processing-and-analysis.html#cb32-255"></a>  <span class="co"># Now I want to know what the distribution of each metric looks like in each cluster. I&#39;ll do that through violin plots. For that, I&#39;ll need to work on the format of the df to plot</span></span>
+<span id="cb32-256"><a href="data-processing-and-analysis.html#cb32-256"></a>  <span class="co"># Selecting just the columns of interest</span></span>
+<span id="cb32-257"><a href="data-processing-and-analysis.html#cb32-257"></a>  dta_facto  &lt;-<span class="st"> </span>dta[, <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">7</span>)]</span>
+<span id="cb32-258"><a href="data-processing-and-analysis.html#cb32-258"></a>  <span class="co"># Gathering into more rows and less columns</span></span>
+<span id="cb32-259"><a href="data-processing-and-analysis.html#cb32-259"></a>  dta_gather &lt;-<span class="st"> </span>dta_facto <span class="op">%&gt;%</span></span>
+<span id="cb32-260"><a href="data-processing-and-analysis.html#cb32-260"></a><span class="st">  </span><span class="kw">gather</span>(<span class="dt">key =</span> metric, <span class="dt">value =</span> value,<span class="op">-</span>clust_prox,<span class="op">-</span>group)</span>
+<span id="cb32-261"><a href="data-processing-and-analysis.html#cb32-261"></a>  <span class="co"># Transforming the new metric column into a factor with levels ordered based on the contribution of each metric to the first principal component</span></span>
+<span id="cb32-262"><a href="data-processing-and-analysis.html#cb32-262"></a>  dta_gather<span class="op">$</span>metric &lt;-</span>
+<span id="cb32-263"><a href="data-processing-and-analysis.html#cb32-263"></a><span class="st">  </span><span class="kw">factor</span>(dta_gather<span class="op">$</span>metric, <span class="dt">levels =</span> <span class="kw">c</span>(<span class="st">&quot;Prox&quot;</span>, <span class="st">&quot;DI.theta&quot;</span>, <span class="st">&quot;DI.d&quot;</span>))</span>
+<span id="cb32-264"><a href="data-processing-and-analysis.html#cb32-264"></a>  <span class="co">#names(weight_var)[order(weight_var,</span></span>
+<span id="cb32-265"><a href="data-processing-and-analysis.html#cb32-265"></a>  <span class="co"># decreasing = TRUE)])</span></span>
+<span id="cb32-266"><a href="data-processing-and-analysis.html#cb32-266"></a>  </span>
+<span id="cb32-267"><a href="data-processing-and-analysis.html#cb32-267"></a>  <span class="co"># histograms</span></span>
+<span id="cb32-268"><a href="data-processing-and-analysis.html#cb32-268"></a>  <span class="kw">ggplot</span>(<span class="dt">data =</span> dta_gather, <span class="kw">aes</span>(<span class="dt">x =</span> value, <span class="dt">color =</span> group)) <span class="op">+</span></span>
+<span id="cb32-269"><a href="data-processing-and-analysis.html#cb32-269"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="dt">position =</span> <span class="st">&quot;dodge&quot;</span>) <span class="op">+</span></span>
+<span id="cb32-270"><a href="data-processing-and-analysis.html#cb32-270"></a><span class="st">  </span><span class="co"># geom_density(alpha=0.6)+</span></span>
+<span id="cb32-271"><a href="data-processing-and-analysis.html#cb32-271"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="dt">facets =</span> <span class="kw">vars</span>(metric), <span class="dt">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="op">+</span></span>
+<span id="cb32-272"><a href="data-processing-and-analysis.html#cb32-272"></a><span class="st">  </span><span class="kw">scale_color_viridis</span>(<span class="dt">discrete =</span> <span class="ot">TRUE</span>) <span class="op">+</span></span>
+<span id="cb32-273"><a href="data-processing-and-analysis.html#cb32-273"></a><span class="st">  </span><span class="kw">theme_bw</span>() <span class="op">+</span></span>
+<span id="cb32-274"><a href="data-processing-and-analysis.html#cb32-274"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&#39;&#39;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;&quot;</span>) <span class="op">+</span></span>
+<span id="cb32-275"><a href="data-processing-and-analysis.html#cb32-275"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>, <span class="dt">text =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))</span>
+<span id="cb32-276"><a href="data-processing-and-analysis.html#cb32-276"></a>  <span class="kw">ggsave</span>(</span>
+<span id="cb32-277"><a href="data-processing-and-analysis.html#cb32-277"></a>  <span class="kw">paste0</span>(</span>
+<span id="cb32-278"><a href="data-processing-and-analysis.html#cb32-278"></a>  dossier.stats.outputs,</span>
+<span id="cb32-279"><a href="data-processing-and-analysis.html#cb32-279"></a>  <span class="st">&quot;clustFree_MetricsHist_PTM_&quot;</span>,</span>
+<span id="cb32-280"><a href="data-processing-and-analysis.html#cb32-280"></a>  gear,</span>
+<span id="cb32-281"><a href="data-processing-and-analysis.html#cb32-281"></a>  <span class="st">&quot;_ordered.pdf&quot;</span></span>
+<span id="cb32-282"><a href="data-processing-and-analysis.html#cb32-282"></a>  ),</span>
+<span id="cb32-283"><a href="data-processing-and-analysis.html#cb32-283"></a>  <span class="dt">width =</span> <span class="dv">8</span></span>
+<span id="cb32-284"><a href="data-processing-and-analysis.html#cb32-284"></a>  )</span>
+<span id="cb32-285"><a href="data-processing-and-analysis.html#cb32-285"></a>  <span class="kw">ggsave</span>(</span>
+<span id="cb32-286"><a href="data-processing-and-analysis.html#cb32-286"></a>  <span class="kw">paste0</span>(</span>
+<span id="cb32-287"><a href="data-processing-and-analysis.html#cb32-287"></a>  dossier.stats.outputs,</span>
+<span id="cb32-288"><a href="data-processing-and-analysis.html#cb32-288"></a>  <span class="st">&quot;clustFree_MetricsHist_PTM_&quot;</span>,</span>
+<span id="cb32-289"><a href="data-processing-and-analysis.html#cb32-289"></a>  gear,</span>
+<span id="cb32-290"><a href="data-processing-and-analysis.html#cb32-290"></a>  <span class="st">&quot;_ordered.png&quot;</span></span>
+<span id="cb32-291"><a href="data-processing-and-analysis.html#cb32-291"></a>  ),</span>
+<span id="cb32-292"><a href="data-processing-and-analysis.html#cb32-292"></a>  <span class="dt">width =</span> <span class="dv">8</span></span>
+<span id="cb32-293"><a href="data-processing-and-analysis.html#cb32-293"></a>  )</span>
+<span id="cb32-294"><a href="data-processing-and-analysis.html#cb32-294"></a>  </span>
+<span id="cb32-295"><a href="data-processing-and-analysis.html#cb32-295"></a><span class="co">## Here we&#39;ll be computing stats about the number of dyads, couples, vessels, etc., in total and each cluster</span></span>
+<span id="cb32-296"><a href="data-processing-and-analysis.html#cb32-296"></a></span>
+<span id="cb32-297"><a href="data-processing-and-analysis.html#cb32-297"></a><span class="co"># First, we&#39;ll save a df with everything we could care about for PTM dyads</span></span>
+<span id="cb32-298"><a href="data-processing-and-analysis.html#cb32-298"></a>dyads_cluster &lt;-<span class="st"> </span>dyads <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(gear<span class="fl">.1</span> <span class="op">==</span><span class="st"> &quot;PTM&quot;</span>)</span>
+<span id="cb32-299"><a href="data-processing-and-analysis.html#cb32-299"></a>dyads_cluster &lt;-</span>
+<span id="cb32-300"><a href="data-processing-and-analysis.html#cb32-300"></a><span class="st">  </span><span class="kw">cbind.data.frame</span>(dyads_cluster, dta[, <span class="kw">c</span>(<span class="st">&quot;p_cluster&quot;</span>, <span class="st">&quot;clust_new_order&quot;</span>)])</span>
+<span id="cb32-301"><a href="data-processing-and-analysis.html#cb32-301"></a><span class="kw">saveRDS</span>(</span>
+<span id="cb32-302"><a href="data-processing-and-analysis.html#cb32-302"></a>  dyads_cluster,</span>
+<span id="cb32-303"><a href="data-processing-and-analysis.html#cb32-303"></a>  <span class="dt">file =</span> <span class="kw">paste0</span>(</span>
+<span id="cb32-304"><a href="data-processing-and-analysis.html#cb32-304"></a>    dossier.data.outputs,</span>
+<span id="cb32-305"><a href="data-processing-and-analysis.html#cb32-305"></a>    <span class="st">&#39;ClustPCAoutputs-PTM-&#39;</span>,</span>
+<span id="cb32-306"><a href="data-processing-and-analysis.html#cb32-306"></a>    gear,</span>
+<span id="cb32-307"><a href="data-processing-and-analysis.html#cb32-307"></a>    <span class="st">&#39;-&#39;</span>,</span>
+<span id="cb32-308"><a href="data-processing-and-analysis.html#cb32-308"></a>    <span class="kw">paste0</span>(variables, <span class="dt">collapse =</span> <span class="st">&#39;-&#39;</span>),</span>
+<span id="cb32-309"><a href="data-processing-and-analysis.html#cb32-309"></a>    <span class="st">&#39;_ordered.rds&#39;</span></span>
+<span id="cb32-310"><a href="data-processing-and-analysis.html#cb32-310"></a>  )</span>
+<span id="cb32-311"><a href="data-processing-and-analysis.html#cb32-311"></a>)</span>
+<span id="cb32-312"><a href="data-processing-and-analysis.html#cb32-312"></a></span>
+<span id="cb32-313"><a href="data-processing-and-analysis.html#cb32-313"></a><span class="co"># now we compute the stats and save them in .RData and a LaTeX table format</span></span>
+<span id="cb32-314"><a href="data-processing-and-analysis.html#cb32-314"></a>stats.clusters &lt;-<span class="st"> </span><span class="kw">stats_clusters</span>(k, dyads_cluster)</span>
+<span id="cb32-315"><a href="data-processing-and-analysis.html#cb32-315"></a></span>
+<span id="cb32-316"><a href="data-processing-and-analysis.html#cb32-316"></a><span class="kw">save</span>(</span>
+<span id="cb32-317"><a href="data-processing-and-analysis.html#cb32-317"></a>  stats.clusters,</span>
+<span id="cb32-318"><a href="data-processing-and-analysis.html#cb32-318"></a>  <span class="dt">file =</span> <span class="kw">paste0</span>(</span>
+<span id="cb32-319"><a href="data-processing-and-analysis.html#cb32-319"></a>    dossier.data.outputs,</span>
+<span id="cb32-320"><a href="data-processing-and-analysis.html#cb32-320"></a>    <span class="st">&quot;ClusterTable-&quot;</span>,</span>
+<span id="cb32-321"><a href="data-processing-and-analysis.html#cb32-321"></a>    k,</span>
+<span id="cb32-322"><a href="data-processing-and-analysis.html#cb32-322"></a>    <span class="st">&#39;-PTM-&#39;</span>,</span>
+<span id="cb32-323"><a href="data-processing-and-analysis.html#cb32-323"></a>    gear,</span>
+<span id="cb32-324"><a href="data-processing-and-analysis.html#cb32-324"></a>    <span class="st">&#39;-&#39;</span>,</span>
+<span id="cb32-325"><a href="data-processing-and-analysis.html#cb32-325"></a>    <span class="kw">paste</span>(variables, <span class="dt">collapse =</span> <span class="st">&#39;-&#39;</span>),</span>
+<span id="cb32-326"><a href="data-processing-and-analysis.html#cb32-326"></a>    <span class="st">&#39;ordered.RData&#39;</span></span>
+<span id="cb32-327"><a href="data-processing-and-analysis.html#cb32-327"></a>  )</span>
+<span id="cb32-328"><a href="data-processing-and-analysis.html#cb32-328"></a>)</span>
+<span id="cb32-329"><a href="data-processing-and-analysis.html#cb32-329"></a></span>
+<span id="cb32-330"><a href="data-processing-and-analysis.html#cb32-330"></a><span class="kw">print</span>(</span>
+<span id="cb32-331"><a href="data-processing-and-analysis.html#cb32-331"></a>  <span class="kw">xtable</span>(<span class="kw">t</span>(stats.clusters)),</span>
+<span id="cb32-332"><a href="data-processing-and-analysis.html#cb32-332"></a>  <span class="dt">file =</span> <span class="kw">paste0</span>(</span>
+<span id="cb32-333"><a href="data-processing-and-analysis.html#cb32-333"></a>    dossier.stats.outputs,</span>
+<span id="cb32-334"><a href="data-processing-and-analysis.html#cb32-334"></a>    <span class="st">&quot;ClusterLatexTable-&quot;</span>,</span>
+<span id="cb32-335"><a href="data-processing-and-analysis.html#cb32-335"></a>    k,</span>
+<span id="cb32-336"><a href="data-processing-and-analysis.html#cb32-336"></a>    <span class="st">&#39;-PTM-&#39;</span>,</span>
+<span id="cb32-337"><a href="data-processing-and-analysis.html#cb32-337"></a>    gear,</span>
+<span id="cb32-338"><a href="data-processing-and-analysis.html#cb32-338"></a>    <span class="st">&#39;-&#39;</span>,</span>
+<span id="cb32-339"><a href="data-processing-and-analysis.html#cb32-339"></a>    <span class="kw">paste</span>(variables, <span class="dt">collapse =</span> <span class="st">&#39;-&#39;</span>),</span>
+<span id="cb32-340"><a href="data-processing-and-analysis.html#cb32-340"></a>    <span class="st">&#39;ordered.txt&#39;</span></span>
+<span id="cb32-341"><a href="data-processing-and-analysis.html#cb32-341"></a>  )</span>
+<span id="cb32-342"><a href="data-processing-and-analysis.html#cb32-342"></a>)</span></code></pre></div>
+</div>
+<div id="classifying-the-dyads-of-the-other-fleets" class="section level2">
+<h2><span class="header-section-number">2.3</span> Classifying the dyads of the other fleets</h2>
+<p>We use the Best GMM for pelagic pair trawlers to classify the other dyads into the 3 groups, by fleet. We also do the same graphs as for the pair trawlers (and some extras) and produce the statistics by cluster.
+We use functions called above.</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="data-processing-and-analysis.html#cb33-1"></a><span class="co"># Large bottom otter trawlers</span></span>
+<span id="cb33-2"><a href="data-processing-and-analysis.html#cb33-2"></a><span class="kw">dyad_classif</span>(</span>
+<span id="cb33-3"><a href="data-processing-and-analysis.html#cb33-3"></a><span class="dt">gear =</span> <span class="st">&quot;LOTB&quot;</span>,</span>
+<span id="cb33-4"><a href="data-processing-and-analysis.html#cb33-4"></a>variables,</span>
+<span id="cb33-5"><a href="data-processing-and-analysis.html#cb33-5"></a>dyads,</span>
+<span id="cb33-6"><a href="data-processing-and-analysis.html#cb33-6"></a>BestModel,</span>
+<span id="cb33-7"><a href="data-processing-and-analysis.html#cb33-7"></a>k,</span>
+<span id="cb33-8"><a href="data-processing-and-analysis.html#cb33-8"></a>order_clust,</span>
+<span id="cb33-9"><a href="data-processing-and-analysis.html#cb33-9"></a>cluster.file,</span>
+<span id="cb33-10"><a href="data-processing-and-analysis.html#cb33-10"></a>dossier.stats.outputs,</span>
+<span id="cb33-11"><a href="data-processing-and-analysis.html#cb33-11"></a>dossier.data.outputs,</span>
+<span id="cb33-12"><a href="data-processing-and-analysis.html#cb33-12"></a>dta</span>
+<span id="cb33-13"><a href="data-processing-and-analysis.html#cb33-13"></a>)</span>
+<span id="cb33-14"><a href="data-processing-and-analysis.html#cb33-14"></a></span>
+<span id="cb33-15"><a href="data-processing-and-analysis.html#cb33-15"></a><span class="co"># Small bottom otter trawlers</span></span>
+<span id="cb33-16"><a href="data-processing-and-analysis.html#cb33-16"></a><span class="kw">dyad_classif</span>(</span>
+<span id="cb33-17"><a href="data-processing-and-analysis.html#cb33-17"></a><span class="dt">gear =</span> <span class="st">&quot;SOTB&quot;</span>,</span>
+<span id="cb33-18"><a href="data-processing-and-analysis.html#cb33-18"></a>variables,</span>
+<span id="cb33-19"><a href="data-processing-and-analysis.html#cb33-19"></a>dyads,</span>
+<span id="cb33-20"><a href="data-processing-and-analysis.html#cb33-20"></a>BestModel,</span>
+<span id="cb33-21"><a href="data-processing-and-analysis.html#cb33-21"></a>k,</span>
+<span id="cb33-22"><a href="data-processing-and-analysis.html#cb33-22"></a>order_clust,</span>
+<span id="cb33-23"><a href="data-processing-and-analysis.html#cb33-23"></a>cluster.file,</span>
+<span id="cb33-24"><a href="data-processing-and-analysis.html#cb33-24"></a>dossier.stats.outputs,</span>
+<span id="cb33-25"><a href="data-processing-and-analysis.html#cb33-25"></a>dossier.data.outputs,</span>
+<span id="cb33-26"><a href="data-processing-and-analysis.html#cb33-26"></a>dta</span>
+<span id="cb33-27"><a href="data-processing-and-analysis.html#cb33-27"></a>)</span>
+<span id="cb33-28"><a href="data-processing-and-analysis.html#cb33-28"></a></span>
+<span id="cb33-29"><a href="data-processing-and-analysis.html#cb33-29"></a><span class="co"># Mid-water otter trawlers</span></span>
+<span id="cb33-30"><a href="data-processing-and-analysis.html#cb33-30"></a><span class="kw">dyad_classif</span>(</span>
+<span id="cb33-31"><a href="data-processing-and-analysis.html#cb33-31"></a><span class="dt">gear =</span> <span class="st">&quot;OTM&quot;</span>,</span>
+<span id="cb33-32"><a href="data-processing-and-analysis.html#cb33-32"></a>variables,</span>
+<span id="cb33-33"><a href="data-processing-and-analysis.html#cb33-33"></a>dyads,</span>
+<span id="cb33-34"><a href="data-processing-and-analysis.html#cb33-34"></a>BestModel,</span>
+<span id="cb33-35"><a href="data-processing-and-analysis.html#cb33-35"></a>k,</span>
+<span id="cb33-36"><a href="data-processing-and-analysis.html#cb33-36"></a>order_clust,</span>
+<span id="cb33-37"><a href="data-processing-and-analysis.html#cb33-37"></a>cluster.file,</span>
+<span id="cb33-38"><a href="data-processing-and-analysis.html#cb33-38"></a>dossier.stats.outputs,</span>
+<span id="cb33-39"><a href="data-processing-and-analysis.html#cb33-39"></a>dossier.data.outputs,</span>
+<span id="cb33-40"><a href="data-processing-and-analysis.html#cb33-40"></a>dta</span>
+<span id="cb33-41"><a href="data-processing-and-analysis.html#cb33-41"></a>)</span>
+<span id="cb33-42"><a href="data-processing-and-analysis.html#cb33-42"></a></span>
+<span id="cb33-43"><a href="data-processing-and-analysis.html#cb33-43"></a><span class="co"># Tuna purse-seiners</span></span>
+<span id="cb33-44"><a href="data-processing-and-analysis.html#cb33-44"></a><span class="kw">dyad_classif</span>(</span>
+<span id="cb33-45"><a href="data-processing-and-analysis.html#cb33-45"></a><span class="dt">gear =</span> <span class="st">&quot;thon&quot;</span>,</span>
+<span id="cb33-46"><a href="data-processing-and-analysis.html#cb33-46"></a>variables,</span>
+<span id="cb33-47"><a href="data-processing-and-analysis.html#cb33-47"></a>dyads,</span>
+<span id="cb33-48"><a href="data-processing-and-analysis.html#cb33-48"></a>BestModel,</span>
+<span id="cb33-49"><a href="data-processing-and-analysis.html#cb33-49"></a>k,</span>
+<span id="cb33-50"><a href="data-processing-and-analysis.html#cb33-50"></a>order_clust,</span>
+<span id="cb33-51"><a href="data-processing-and-analysis.html#cb33-51"></a>cluster.file,</span>
+<span id="cb33-52"><a href="data-processing-and-analysis.html#cb33-52"></a>dossier.stats.outputs,</span>
+<span id="cb33-53"><a href="data-processing-and-analysis.html#cb33-53"></a>dossier.data.outputs,</span>
+<span id="cb33-54"><a href="data-processing-and-analysis.html#cb33-54"></a>dta</span>
+<span id="cb33-55"><a href="data-processing-and-analysis.html#cb33-55"></a>)</span>
+<span id="cb33-56"><a href="data-processing-and-analysis.html#cb33-56"></a></span>
+<span id="cb33-57"><a href="data-processing-and-analysis.html#cb33-57"></a><span class="co"># Anchovy purse-seiners</span></span>
+<span id="cb33-58"><a href="data-processing-and-analysis.html#cb33-58"></a><span class="kw">dyad_classif</span>(</span>
+<span id="cb33-59"><a href="data-processing-and-analysis.html#cb33-59"></a><span class="dt">gear =</span> <span class="st">&quot;APS-10&quot;</span>,</span>
+<span id="cb33-60"><a href="data-processing-and-analysis.html#cb33-60"></a>variables,</span>
+<span id="cb33-61"><a href="data-processing-and-analysis.html#cb33-61"></a>dyads,</span>
+<span id="cb33-62"><a href="data-processing-and-analysis.html#cb33-62"></a>BestModel,</span>
+<span id="cb33-63"><a href="data-processing-and-analysis.html#cb33-63"></a>k,</span>
+<span id="cb33-64"><a href="data-processing-and-analysis.html#cb33-64"></a>order_clust,</span>
+<span id="cb33-65"><a href="data-processing-and-analysis.html#cb33-65"></a>cluster.file,</span>
+<span id="cb33-66"><a href="data-processing-and-analysis.html#cb33-66"></a>dossier.stats.outputs,</span>
+<span id="cb33-67"><a href="data-processing-and-analysis.html#cb33-67"></a>dossier.data.outputs,</span>
+<span id="cb33-68"><a href="data-processing-and-analysis.html#cb33-68"></a>dta</span>
+<span id="cb33-69"><a href="data-processing-and-analysis.html#cb33-69"></a>)</span></code></pre></div>
+</div>
+<div id="plots-and-animations-of-dyads-tracks-and-time-series-and-network-graphs" class="section level2">
+<h2><span class="header-section-number">2.4</span> Plots and animations of dyad’s tracks and time series, and network graphs</h2>
+<p>In order to reproduce this code, you would need the actual VMS data from the
+fleets, which I cannot provide. Due to the same confidentiality issues, these
+plots are anonymous, without coastlines and the longitude and latitude
+coordinates are transformed.</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="data-processing-and-analysis.html#cb34-1"></a><span class="co"># We first set some values for parameters</span></span>
+<span id="cb34-2"><a href="data-processing-and-analysis.html#cb34-2"></a>video.par &lt;-<span class="st"> </span><span class="ot">NULL</span></span>
+<span id="cb34-3"><a href="data-processing-and-analysis.html#cb34-3"></a>video.par<span class="op">$</span>type &lt;-</span>
+<span id="cb34-4"><a href="data-processing-and-analysis.html#cb34-4"></a><span class="st">&#39;plot&#39;</span> <span class="co"># choose between video, plot, series and all</span></span>
+<span id="cb34-5"><a href="data-processing-and-analysis.html#cb34-5"></a>video.par<span class="op">$</span>mp4 &lt;-</span>
+<span id="cb34-6"><a href="data-processing-and-analysis.html#cb34-6"></a><span class="ot">FALSE</span> <span class="co"># IF SO, ffmpeg function must be able to run in the konsole</span></span>
+<span id="cb34-7"><a href="data-processing-and-analysis.html#cb34-7"></a>video.par<span class="op">$</span>gif &lt;-<span class="st"> </span><span class="ot">FALSE</span> <span class="co"># Or TRUE</span></span>
+<span id="cb34-8"><a href="data-processing-and-analysis.html#cb34-8"></a>video.par<span class="op">$</span>html &lt;-</span>
+<span id="cb34-9"><a href="data-processing-and-analysis.html#cb34-9"></a><span class="ot">FALSE</span> <span class="co"># we need this to be TRUE to create mp4 anyway</span></span>
+<span id="cb34-10"><a href="data-processing-and-analysis.html#cb34-10"></a>video.par<span class="op">$</span>series_gif &lt;-</span>
+<span id="cb34-11"><a href="data-processing-and-analysis.html#cb34-11"></a><span class="ot">FALSE</span> <span class="co"># Or TRUE. To produce gifs of time series of the metrics</span></span>
+<span id="cb34-12"><a href="data-processing-and-analysis.html#cb34-12"></a>video.par<span class="op">$</span>series_pdf &lt;-</span>
+<span id="cb34-13"><a href="data-processing-and-analysis.html#cb34-13"></a><span class="ot">FALSE</span> <span class="co"># Or TRUE. To produce pdf graphs of time series of the metrics</span></span>
+<span id="cb34-14"><a href="data-processing-and-analysis.html#cb34-14"></a>video.par<span class="op">$</span>traza =<span class="st"> </span><span class="dv">10</span> <span class="co"># number of hours for leaving a trace at each frame in the video</span></span>
+<span id="cb34-15"><a href="data-processing-and-analysis.html#cb34-15"></a>video.par<span class="op">$</span>epais =<span class="st"> </span><span class="dv">4</span> <span class="co"># width of trajectories</span></span>
+<span id="cb34-16"><a href="data-processing-and-analysis.html#cb34-16"></a>video.par<span class="op">$</span>sleep =<span class="st"> </span><span class="fl">0.25</span> <span class="co"># time between frames (quarter of a second)</span></span>
+<span id="cb34-17"><a href="data-processing-and-analysis.html#cb34-17"></a>video.par<span class="op">$</span>point.size =<span class="st"> </span><span class="fl">1.2</span> <span class="co"># size of points in the plots and animations</span></span>
+<span id="cb34-18"><a href="data-processing-and-analysis.html#cb34-18"></a></span>
+<span id="cb34-19"><a href="data-processing-and-analysis.html#cb34-19"></a><span class="co"># VMS data</span></span>
+<span id="cb34-20"><a href="data-processing-and-analysis.html#cb34-20"></a><span class="kw">load</span>(<span class="kw">paste0</span>(dossier.data.outputs, <span class="st">&#39;vms_2012-2013.RData&#39;</span>)) <span class="co">#</span></span>
+<span id="cb34-21"><a href="data-processing-and-analysis.html#cb34-21"></a>vms_trawlers &lt;-<span class="st"> </span>vms.data</span>
+<span id="cb34-22"><a href="data-processing-and-analysis.html#cb34-22"></a><span class="kw">load</span>(<span class="kw">paste0</span>(dossier.data.outputs, <span class="st">&#39;vms_thon_2011-2013.RData&#39;</span>))</span>
+<span id="cb34-23"><a href="data-processing-and-analysis.html#cb34-23"></a>vms_thon &lt;-<span class="st"> </span>vms.data.years</span>
+<span id="cb34-24"><a href="data-processing-and-analysis.html#cb34-24"></a><span class="kw">load</span>(<span class="kw">paste0</span>(dossier.data.outputs, <span class="st">&quot;vms_data_10.RData&quot;</span>))</span>
+<span id="cb34-25"><a href="data-processing-and-analysis.html#cb34-25"></a>vms_aps &lt;-<span class="st"> </span>vms.data</span>
+<span id="cb34-26"><a href="data-processing-and-analysis.html#cb34-26"></a></span>
+<span id="cb34-27"><a href="data-processing-and-analysis.html#cb34-27"></a><span class="co"># For pelagic pair trawlers</span></span>
+<span id="cb34-28"><a href="data-processing-and-analysis.html#cb34-28"></a></span>
+<span id="cb34-29"><a href="data-processing-and-analysis.html#cb34-29"></a>vms_ptm &lt;-</span>
+<span id="cb34-30"><a href="data-processing-and-analysis.html#cb34-30"></a>vms_trawlers[<span class="kw">which</span>(<span class="kw">as.character</span>(vms_trawlers<span class="op">$</span>gear.maree) <span class="op">==</span><span class="st"> &quot;PTM&quot;</span>), ]</span>
+<span id="cb34-31"><a href="data-processing-and-analysis.html#cb34-31"></a>dyads_ptm &lt;-<span class="st"> </span><span class="kw">readRDS</span>(<span class="dt">file =</span> <span class="kw">paste0</span>(</span>
+<span id="cb34-32"><a href="data-processing-and-analysis.html#cb34-32"></a>dossier.data.outputs,</span>
+<span id="cb34-33"><a href="data-processing-and-analysis.html#cb34-33"></a><span class="st">&#39;ClustPCAoutputs-PTM-all-&#39;</span>,</span>
+<span id="cb34-34"><a href="data-processing-and-analysis.html#cb34-34"></a><span class="kw">paste0</span>(variables, <span class="dt">collapse =</span> <span class="st">&#39;-&#39;</span>),</span>
+<span id="cb34-35"><a href="data-processing-and-analysis.html#cb34-35"></a><span class="st">&#39;_ordered.rds&#39;</span></span>
+<span id="cb34-36"><a href="data-processing-and-analysis.html#cb34-36"></a>))</span>
+<span id="cb34-37"><a href="data-processing-and-analysis.html#cb34-37"></a></span>
+<span id="cb34-38"><a href="data-processing-and-analysis.html#cb34-38"></a>columns &lt;-</span>
+<span id="cb34-39"><a href="data-processing-and-analysis.html#cb34-39"></a><span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,</span>
+<span id="cb34-40"><a href="data-processing-and-analysis.html#cb34-40"></a><span class="st">&quot;y&quot;</span>,</span>
+<span id="cb34-41"><a href="data-processing-and-analysis.html#cb34-41"></a><span class="st">&quot;date&quot;</span>,</span>
+<span id="cb34-42"><a href="data-processing-and-analysis.html#cb34-42"></a><span class="st">&quot;id&quot;</span>,</span>
+<span id="cb34-43"><a href="data-processing-and-analysis.html#cb34-43"></a><span class="st">&quot;burst&quot;</span>,</span>
+<span id="cb34-44"><a href="data-processing-and-analysis.html#cb34-44"></a><span class="st">&quot;abs.angle&quot;</span>,</span>
+<span id="cb34-45"><a href="data-processing-and-analysis.html#cb34-45"></a><span class="st">&quot;LONGITUDE&quot;</span>,</span>
+<span id="cb34-46"><a href="data-processing-and-analysis.html#cb34-46"></a><span class="st">&quot;LATITUDE&quot;</span>,</span>
+<span id="cb34-47"><a href="data-processing-and-analysis.html#cb34-47"></a><span class="st">&quot;ligne&quot;</span>)</span>
+<span id="cb34-48"><a href="data-processing-and-analysis.html#cb34-48"></a>vms.data &lt;-<span class="st"> </span>vms_ptm[, columns]</span>
+<span id="cb34-49"><a href="data-processing-and-analysis.html#cb34-49"></a><span class="kw">names</span>(vms.data) &lt;-</span>
+<span id="cb34-50"><a href="data-processing-and-analysis.html#cb34-50"></a>columns &lt;-</span>
+<span id="cb34-51"><a href="data-processing-and-analysis.html#cb34-51"></a><span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,</span>
+<span id="cb34-52"><a href="data-processing-and-analysis.html#cb34-52"></a><span class="st">&quot;y&quot;</span>,</span>
+<span id="cb34-53"><a href="data-processing-and-analysis.html#cb34-53"></a><span class="st">&quot;date&quot;</span>,</span>
+<span id="cb34-54"><a href="data-processing-and-analysis.html#cb34-54"></a><span class="st">&quot;id&quot;</span>,</span>
+<span id="cb34-55"><a href="data-processing-and-analysis.html#cb34-55"></a><span class="st">&quot;burst&quot;</span>,</span>
+<span id="cb34-56"><a href="data-processing-and-analysis.html#cb34-56"></a><span class="st">&quot;abs.angle&quot;</span>,</span>
+<span id="cb34-57"><a href="data-processing-and-analysis.html#cb34-57"></a><span class="st">&quot;LONGITUDE&quot;</span>,</span>
+<span id="cb34-58"><a href="data-processing-and-analysis.html#cb34-58"></a><span class="st">&quot;LATITUDE&quot;</span>,</span>
+<span id="cb34-59"><a href="data-processing-and-analysis.html#cb34-59"></a><span class="st">&quot;line&quot;</span>)</span>
+<span id="cb34-60"><a href="data-processing-and-analysis.html#cb34-60"></a></span>
+<span id="cb34-61"><a href="data-processing-and-analysis.html#cb34-61"></a>Prox_delta &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>)</span>
+<span id="cb34-62"><a href="data-processing-and-analysis.html#cb34-62"></a>DI_beta &lt;-<span class="st"> </span><span class="dv">1</span></span>
+<span id="cb34-63"><a href="data-processing-and-analysis.html#cb34-63"></a></span>
+<span id="cb34-64"><a href="data-processing-and-analysis.html#cb34-64"></a><span class="kw">plots.video.dyads.allgears</span>(</span>
+<span id="cb34-65"><a href="data-processing-and-analysis.html#cb34-65"></a>vms.data,</span>
+<span id="cb34-66"><a href="data-processing-and-analysis.html#cb34-66"></a><span class="dt">dyads =</span> dyads_ptm,</span>
+<span id="cb34-67"><a href="data-processing-and-analysis.html#cb34-67"></a><span class="dt">n =</span> <span class="dv">3</span>,</span>
+<span id="cb34-68"><a href="data-processing-and-analysis.html#cb34-68"></a><span class="dt">gear =</span> <span class="st">&quot;PTM&quot;</span>,</span>
+<span id="cb34-69"><a href="data-processing-and-analysis.html#cb34-69"></a><span class="dt">new.variables =</span> variables,</span>
+<span id="cb34-70"><a href="data-processing-and-analysis.html#cb34-70"></a>dossier.data.outputs,</span>
+<span id="cb34-71"><a href="data-processing-and-analysis.html#cb34-71"></a>dossier.stats.outputs,</span>
+<span id="cb34-72"><a href="data-processing-and-analysis.html#cb34-72"></a><span class="dt">text.dyads =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb34-73"><a href="data-processing-and-analysis.html#cb34-73"></a>video.par,</span>
+<span id="cb34-74"><a href="data-processing-and-analysis.html#cb34-74"></a><span class="dt">colores =</span> <span class="kw">c</span>(<span class="st">&quot;#66c2a5&quot;</span>, <span class="st">&quot;#fc8d62&quot;</span>, <span class="st">&quot;#8da0cb&quot;</span>)</span>
+<span id="cb34-75"><a href="data-processing-and-analysis.html#cb34-75"></a>)</span>
+<span id="cb34-76"><a href="data-processing-and-analysis.html#cb34-76"></a></span>
+<span id="cb34-77"><a href="data-processing-and-analysis.html#cb34-77"></a><span class="kw">Fleet.Analysis</span>(</span>
+<span id="cb34-78"><a href="data-processing-and-analysis.html#cb34-78"></a>vms.data,</span>
+<span id="cb34-79"><a href="data-processing-and-analysis.html#cb34-79"></a><span class="dt">dyads =</span> dyads_ptm,</span>
+<span id="cb34-80"><a href="data-processing-and-analysis.html#cb34-80"></a>dossier.data.outputs,</span>
+<span id="cb34-81"><a href="data-processing-and-analysis.html#cb34-81"></a>dossier.stats.outputs,</span>
+<span id="cb34-82"><a href="data-processing-and-analysis.html#cb34-82"></a><span class="dt">gear =</span> <span class="st">&quot;PTM&quot;</span></span>
+<span id="cb34-83"><a href="data-processing-and-analysis.html#cb34-83"></a>)</span>
+<span id="cb34-84"><a href="data-processing-and-analysis.html#cb34-84"></a></span>
+<span id="cb34-85"><a href="data-processing-and-analysis.html#cb34-85"></a><span class="co"># For larger bottom otter trawlers</span></span>
+<span id="cb34-86"><a href="data-processing-and-analysis.html#cb34-86"></a></span>
+<span id="cb34-87"><a href="data-processing-and-analysis.html#cb34-87"></a>vms_lotb &lt;-</span>
+<span id="cb34-88"><a href="data-processing-and-analysis.html#cb34-88"></a>vms_trawlers[<span class="kw">which</span>(<span class="kw">as.character</span>(vms_trawlers<span class="op">$</span>gear.maree) <span class="op">==</span><span class="st"> &quot;OTB&quot;</span> <span class="op">&amp;</span></span>
+<span id="cb34-89"><a href="data-processing-and-analysis.html#cb34-89"></a>vms_trawlers<span class="op">$</span>small <span class="op">==</span><span class="st"> </span><span class="dv">0</span>), ]</span>
+<span id="cb34-90"><a href="data-processing-and-analysis.html#cb34-90"></a>dyads_lotb &lt;-<span class="st"> </span><span class="kw">readRDS</span>(<span class="dt">file =</span> <span class="kw">paste0</span>(</span>
+<span id="cb34-91"><a href="data-processing-and-analysis.html#cb34-91"></a>dossier.data.outputs,</span>
+<span id="cb34-92"><a href="data-processing-and-analysis.html#cb34-92"></a><span class="st">&#39;ClustPCAoutputs-PTM-LOTB-&#39;</span>,</span>
+<span id="cb34-93"><a href="data-processing-and-analysis.html#cb34-93"></a><span class="kw">paste0</span>(variables, <span class="dt">collapse =</span> <span class="st">&#39;-&#39;</span>),</span>
+<span id="cb34-94"><a href="data-processing-and-analysis.html#cb34-94"></a><span class="st">&#39;_ordered.rds&#39;</span></span>
+<span id="cb34-95"><a href="data-processing-and-analysis.html#cb34-95"></a>))</span>
+<span id="cb34-96"><a href="data-processing-and-analysis.html#cb34-96"></a></span>
+<span id="cb34-97"><a href="data-processing-and-analysis.html#cb34-97"></a>columns &lt;-</span>
+<span id="cb34-98"><a href="data-processing-and-analysis.html#cb34-98"></a><span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,</span>
+<span id="cb34-99"><a href="data-processing-and-analysis.html#cb34-99"></a><span class="st">&quot;y&quot;</span>,</span>
+<span id="cb34-100"><a href="data-processing-and-analysis.html#cb34-100"></a><span class="st">&quot;date&quot;</span>,</span>
+<span id="cb34-101"><a href="data-processing-and-analysis.html#cb34-101"></a><span class="st">&quot;id&quot;</span>,</span>
+<span id="cb34-102"><a href="data-processing-and-analysis.html#cb34-102"></a><span class="st">&quot;burst&quot;</span>,</span>
+<span id="cb34-103"><a href="data-processing-and-analysis.html#cb34-103"></a><span class="st">&quot;abs.angle&quot;</span>,</span>
+<span id="cb34-104"><a href="data-processing-and-analysis.html#cb34-104"></a><span class="st">&quot;LONGITUDE&quot;</span>,</span>
+<span id="cb34-105"><a href="data-processing-and-analysis.html#cb34-105"></a><span class="st">&quot;LATITUDE&quot;</span>,</span>
+<span id="cb34-106"><a href="data-processing-and-analysis.html#cb34-106"></a><span class="st">&quot;ligne&quot;</span>)</span>
+<span id="cb34-107"><a href="data-processing-and-analysis.html#cb34-107"></a>vms.data &lt;-<span class="st"> </span>vms_lotb[, columns]</span>
+<span id="cb34-108"><a href="data-processing-and-analysis.html#cb34-108"></a><span class="kw">names</span>(vms.data) &lt;-</span>
+<span id="cb34-109"><a href="data-processing-and-analysis.html#cb34-109"></a>columns &lt;-</span>
+<span id="cb34-110"><a href="data-processing-and-analysis.html#cb34-110"></a><span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,</span>
+<span id="cb34-111"><a href="data-processing-and-analysis.html#cb34-111"></a><span class="st">&quot;y&quot;</span>,</span>
+<span id="cb34-112"><a href="data-processing-and-analysis.html#cb34-112"></a><span class="st">&quot;date&quot;</span>,</span>
+<span id="cb34-113"><a href="data-processing-and-analysis.html#cb34-113"></a><span class="st">&quot;id&quot;</span>,</span>
+<span id="cb34-114"><a href="data-processing-and-analysis.html#cb34-114"></a><span class="st">&quot;burst&quot;</span>,</span>
+<span id="cb34-115"><a href="data-processing-and-analysis.html#cb34-115"></a><span class="st">&quot;abs.angle&quot;</span>,</span>
+<span id="cb34-116"><a href="data-processing-and-analysis.html#cb34-116"></a><span class="st">&quot;LONGITUDE&quot;</span>,</span>
+<span id="cb34-117"><a href="data-processing-and-analysis.html#cb34-117"></a><span class="st">&quot;LATITUDE&quot;</span>,</span>
+<span id="cb34-118"><a href="data-processing-and-analysis.html#cb34-118"></a><span class="st">&quot;line&quot;</span>)</span>
+<span id="cb34-119"><a href="data-processing-and-analysis.html#cb34-119"></a></span>
+<span id="cb34-120"><a href="data-processing-and-analysis.html#cb34-120"></a>Prox_delta &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>)</span>
+<span id="cb34-121"><a href="data-processing-and-analysis.html#cb34-121"></a>DI_beta &lt;-<span class="st"> </span><span class="dv">1</span></span>
+<span id="cb34-122"><a href="data-processing-and-analysis.html#cb34-122"></a></span>
+<span id="cb34-123"><a href="data-processing-and-analysis.html#cb34-123"></a><span class="kw">plots.video.dyads.allgears</span>(</span>
+<span id="cb34-124"><a href="data-processing-and-analysis.html#cb34-124"></a>vms.data,</span>
+<span id="cb34-125"><a href="data-processing-and-analysis.html#cb34-125"></a><span class="dt">dyads =</span> dyads_lotb,</span>
+<span id="cb34-126"><a href="data-processing-and-analysis.html#cb34-126"></a><span class="dt">n =</span> <span class="dv">3</span>,</span>
+<span id="cb34-127"><a href="data-processing-and-analysis.html#cb34-127"></a><span class="dt">gear =</span> <span class="st">&quot;LOTB&quot;</span>,</span>
+<span id="cb34-128"><a href="data-processing-and-analysis.html#cb34-128"></a><span class="dt">new.variables =</span> variables,</span>
+<span id="cb34-129"><a href="data-processing-and-analysis.html#cb34-129"></a>dossier.data.outputs,</span>
+<span id="cb34-130"><a href="data-processing-and-analysis.html#cb34-130"></a>dossier.stats.outputs,</span>
+<span id="cb34-131"><a href="data-processing-and-analysis.html#cb34-131"></a><span class="dt">text.dyads =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb34-132"><a href="data-processing-and-analysis.html#cb34-132"></a>video.par,</span>
+<span id="cb34-133"><a href="data-processing-and-analysis.html#cb34-133"></a><span class="dt">colores =</span> <span class="kw">c</span>(<span class="st">&quot;#66c2a5&quot;</span>, <span class="st">&quot;#fc8d62&quot;</span>, <span class="st">&quot;#8da0cb&quot;</span>)</span>
+<span id="cb34-134"><a href="data-processing-and-analysis.html#cb34-134"></a>)</span>
+<span id="cb34-135"><a href="data-processing-and-analysis.html#cb34-135"></a></span>
+<span id="cb34-136"><a href="data-processing-and-analysis.html#cb34-136"></a><span class="kw">Fleet.Analysis</span>(</span>
+<span id="cb34-137"><a href="data-processing-and-analysis.html#cb34-137"></a>vms.data,</span>
+<span id="cb34-138"><a href="data-processing-and-analysis.html#cb34-138"></a><span class="dt">dyads =</span> dyads_lotb,</span>
+<span id="cb34-139"><a href="data-processing-and-analysis.html#cb34-139"></a>dossier.data.outputs,</span>
+<span id="cb34-140"><a href="data-processing-and-analysis.html#cb34-140"></a>dossier.stats.outputs,</span>
+<span id="cb34-141"><a href="data-processing-and-analysis.html#cb34-141"></a><span class="dt">gear =</span> <span class="st">&quot;LOTB&quot;</span></span>
+<span id="cb34-142"><a href="data-processing-and-analysis.html#cb34-142"></a>)</span>
+<span id="cb34-143"><a href="data-processing-and-analysis.html#cb34-143"></a></span>
+<span id="cb34-144"><a href="data-processing-and-analysis.html#cb34-144"></a><span class="co"># For small bottom otter trawlers</span></span>
+<span id="cb34-145"><a href="data-processing-and-analysis.html#cb34-145"></a></span>
+<span id="cb34-146"><a href="data-processing-and-analysis.html#cb34-146"></a>vms_sotb &lt;-</span>
+<span id="cb34-147"><a href="data-processing-and-analysis.html#cb34-147"></a>vms_trawlers[<span class="kw">which</span>(<span class="kw">as.character</span>(vms_trawlers<span class="op">$</span>gear.maree) <span class="op">==</span><span class="st"> &quot;OTB&quot;</span> <span class="op">&amp;</span></span>
+<span id="cb34-148"><a href="data-processing-and-analysis.html#cb34-148"></a>vms_trawlers<span class="op">$</span>small <span class="op">==</span><span class="st"> </span><span class="dv">1</span>), ]</span>
+<span id="cb34-149"><a href="data-processing-and-analysis.html#cb34-149"></a>dyads_sotb &lt;-<span class="st"> </span><span class="kw">readRDS</span>(<span class="dt">file =</span> <span class="kw">paste0</span>(</span>
+<span id="cb34-150"><a href="data-processing-and-analysis.html#cb34-150"></a>dossier.data.outputs,</span>
+<span id="cb34-151"><a href="data-processing-and-analysis.html#cb34-151"></a><span class="st">&#39;ClustPCAoutputs-PTM-SOTB-&#39;</span>,</span>
+<span id="cb34-152"><a href="data-processing-and-analysis.html#cb34-152"></a><span class="kw">paste0</span>(variables, <span class="dt">collapse =</span> <span class="st">&#39;-&#39;</span>),</span>
+<span id="cb34-153"><a href="data-processing-and-analysis.html#cb34-153"></a><span class="st">&#39;_ordered.rds&#39;</span></span>
+<span id="cb34-154"><a href="data-processing-and-analysis.html#cb34-154"></a>))</span>
+<span id="cb34-155"><a href="data-processing-and-analysis.html#cb34-155"></a></span>
+<span id="cb34-156"><a href="data-processing-and-analysis.html#cb34-156"></a>columns &lt;-</span>
+<span id="cb34-157"><a href="data-processing-and-analysis.html#cb34-157"></a><span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,</span>
+<span id="cb34-158"><a href="data-processing-and-analysis.html#cb34-158"></a><span class="st">&quot;y&quot;</span>,</span>
+<span id="cb34-159"><a href="data-processing-and-analysis.html#cb34-159"></a><span class="st">&quot;date&quot;</span>,</span>
+<span id="cb34-160"><a href="data-processing-and-analysis.html#cb34-160"></a><span class="st">&quot;id&quot;</span>,</span>
+<span id="cb34-161"><a href="data-processing-and-analysis.html#cb34-161"></a><span class="st">&quot;burst&quot;</span>,</span>
+<span id="cb34-162"><a href="data-processing-and-analysis.html#cb34-162"></a><span class="st">&quot;abs.angle&quot;</span>,</span>
+<span id="cb34-163"><a href="data-processing-and-analysis.html#cb34-163"></a><span class="st">&quot;LONGITUDE&quot;</span>,</span>
+<span id="cb34-164"><a href="data-processing-and-analysis.html#cb34-164"></a><span class="st">&quot;LATITUDE&quot;</span>,</span>
+<span id="cb34-165"><a href="data-processing-and-analysis.html#cb34-165"></a><span class="st">&quot;ligne&quot;</span>)</span>
+<span id="cb34-166"><a href="data-processing-and-analysis.html#cb34-166"></a>vms.data &lt;-<span class="st"> </span>vms_sotb[, columns]</span>
+<span id="cb34-167"><a href="data-processing-and-analysis.html#cb34-167"></a><span class="kw">names</span>(vms.data) &lt;-</span>
+<span id="cb34-168"><a href="data-processing-and-analysis.html#cb34-168"></a>columns &lt;-</span>
+<span id="cb34-169"><a href="data-processing-and-analysis.html#cb34-169"></a><span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,</span>
+<span id="cb34-170"><a href="data-processing-and-analysis.html#cb34-170"></a><span class="st">&quot;y&quot;</span>,</span>
+<span id="cb34-171"><a href="data-processing-and-analysis.html#cb34-171"></a><span class="st">&quot;date&quot;</span>,</span>
+<span id="cb34-172"><a href="data-processing-and-analysis.html#cb34-172"></a><span class="st">&quot;id&quot;</span>,</span>
+<span id="cb34-173"><a href="data-processing-and-analysis.html#cb34-173"></a><span class="st">&quot;burst&quot;</span>,</span>
+<span id="cb34-174"><a href="data-processing-and-analysis.html#cb34-174"></a><span class="st">&quot;abs.angle&quot;</span>,</span>
+<span id="cb34-175"><a href="data-processing-and-analysis.html#cb34-175"></a><span class="st">&quot;LONGITUDE&quot;</span>,</span>
+<span id="cb34-176"><a href="data-processing-and-analysis.html#cb34-176"></a><span class="st">&quot;LATITUDE&quot;</span>,</span>
+<span id="cb34-177"><a href="data-processing-and-analysis.html#cb34-177"></a><span class="st">&quot;line&quot;</span>)</span>
+<span id="cb34-178"><a href="data-processing-and-analysis.html#cb34-178"></a></span>
+<span id="cb34-179"><a href="data-processing-and-analysis.html#cb34-179"></a>Prox_delta &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>)</span>
+<span id="cb34-180"><a href="data-processing-and-analysis.html#cb34-180"></a>DI_beta &lt;-<span class="st"> </span><span class="dv">1</span></span>
+<span id="cb34-181"><a href="data-processing-and-analysis.html#cb34-181"></a></span>
+<span id="cb34-182"><a href="data-processing-and-analysis.html#cb34-182"></a><span class="kw">plots.video.dyads.allgears</span>(</span>
+<span id="cb34-183"><a href="data-processing-and-analysis.html#cb34-183"></a>vms.data,</span>
+<span id="cb34-184"><a href="data-processing-and-analysis.html#cb34-184"></a><span class="dt">dyads =</span> dyads_sotb,</span>
+<span id="cb34-185"><a href="data-processing-and-analysis.html#cb34-185"></a><span class="dt">n =</span> <span class="dv">3</span>,</span>
+<span id="cb34-186"><a href="data-processing-and-analysis.html#cb34-186"></a><span class="dt">gear =</span> <span class="st">&quot;SOTB&quot;</span>,</span>
+<span id="cb34-187"><a href="data-processing-and-analysis.html#cb34-187"></a><span class="dt">new.variables =</span> variables,</span>
+<span id="cb34-188"><a href="data-processing-and-analysis.html#cb34-188"></a>dossier.data.outputs,</span>
+<span id="cb34-189"><a href="data-processing-and-analysis.html#cb34-189"></a>dossier.stats.outputs,</span>
+<span id="cb34-190"><a href="data-processing-and-analysis.html#cb34-190"></a><span class="dt">text.dyads =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb34-191"><a href="data-processing-and-analysis.html#cb34-191"></a>video.par,</span>
+<span id="cb34-192"><a href="data-processing-and-analysis.html#cb34-192"></a><span class="dt">colores =</span> <span class="kw">c</span>(<span class="st">&quot;#66c2a5&quot;</span>, <span class="st">&quot;#fc8d62&quot;</span>, <span class="st">&quot;#8da0cb&quot;</span>)</span>
+<span id="cb34-193"><a href="data-processing-and-analysis.html#cb34-193"></a>)</span>
+<span id="cb34-194"><a href="data-processing-and-analysis.html#cb34-194"></a></span>
+<span id="cb34-195"><a href="data-processing-and-analysis.html#cb34-195"></a><span class="kw">Fleet.Analysis</span>(</span>
+<span id="cb34-196"><a href="data-processing-and-analysis.html#cb34-196"></a>vms.data,</span>
+<span id="cb34-197"><a href="data-processing-and-analysis.html#cb34-197"></a><span class="dt">dyads =</span> dyads_sotb,</span>
+<span id="cb34-198"><a href="data-processing-and-analysis.html#cb34-198"></a>dossier.data.outputs,</span>
+<span id="cb34-199"><a href="data-processing-and-analysis.html#cb34-199"></a>dossier.stats.outputs,</span>
+<span id="cb34-200"><a href="data-processing-and-analysis.html#cb34-200"></a><span class="dt">gear =</span> <span class="st">&quot;SOTB&quot;</span></span>
+<span id="cb34-201"><a href="data-processing-and-analysis.html#cb34-201"></a>)</span>
+<span id="cb34-202"><a href="data-processing-and-analysis.html#cb34-202"></a></span>
+<span id="cb34-203"><a href="data-processing-and-analysis.html#cb34-203"></a><span class="co"># For mid-water otter trawlers</span></span>
+<span id="cb34-204"><a href="data-processing-and-analysis.html#cb34-204"></a></span>
+<span id="cb34-205"><a href="data-processing-and-analysis.html#cb34-205"></a>vms_otm &lt;-</span>
+<span id="cb34-206"><a href="data-processing-and-analysis.html#cb34-206"></a>vms_trawlers[<span class="kw">which</span>(<span class="kw">as.character</span>(vms_trawlers<span class="op">$</span>gear.maree) <span class="op">==</span><span class="st"> &quot;OTM&quot;</span>), ]</span>
+<span id="cb34-207"><a href="data-processing-and-analysis.html#cb34-207"></a>dyads_otm &lt;-<span class="st"> </span><span class="kw">readRDS</span>(<span class="dt">file =</span> <span class="kw">paste0</span>(</span>
+<span id="cb34-208"><a href="data-processing-and-analysis.html#cb34-208"></a>dossier.data.outputs,</span>
+<span id="cb34-209"><a href="data-processing-and-analysis.html#cb34-209"></a><span class="st">&#39;ClustPCAoutputs-PTM-OTM-&#39;</span>,</span>
+<span id="cb34-210"><a href="data-processing-and-analysis.html#cb34-210"></a><span class="kw">paste0</span>(variables, <span class="dt">collapse =</span> <span class="st">&#39;-&#39;</span>),</span>
+<span id="cb34-211"><a href="data-processing-and-analysis.html#cb34-211"></a><span class="st">&#39;_ordered.rds&#39;</span></span>
+<span id="cb34-212"><a href="data-processing-and-analysis.html#cb34-212"></a>))</span>
+<span id="cb34-213"><a href="data-processing-and-analysis.html#cb34-213"></a></span>
+<span id="cb34-214"><a href="data-processing-and-analysis.html#cb34-214"></a>columns &lt;-</span>
+<span id="cb34-215"><a href="data-processing-and-analysis.html#cb34-215"></a><span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,</span>
+<span id="cb34-216"><a href="data-processing-and-analysis.html#cb34-216"></a><span class="st">&quot;y&quot;</span>,</span>
+<span id="cb34-217"><a href="data-processing-and-analysis.html#cb34-217"></a><span class="st">&quot;date&quot;</span>,</span>
+<span id="cb34-218"><a href="data-processing-and-analysis.html#cb34-218"></a><span class="st">&quot;id&quot;</span>,</span>
+<span id="cb34-219"><a href="data-processing-and-analysis.html#cb34-219"></a><span class="st">&quot;burst&quot;</span>,</span>
+<span id="cb34-220"><a href="data-processing-and-analysis.html#cb34-220"></a><span class="st">&quot;abs.angle&quot;</span>,</span>
+<span id="cb34-221"><a href="data-processing-and-analysis.html#cb34-221"></a><span class="st">&quot;LONGITUDE&quot;</span>,</span>
+<span id="cb34-222"><a href="data-processing-and-analysis.html#cb34-222"></a><span class="st">&quot;LATITUDE&quot;</span>,</span>
+<span id="cb34-223"><a href="data-processing-and-analysis.html#cb34-223"></a><span class="st">&quot;ligne&quot;</span>)</span>
+<span id="cb34-224"><a href="data-processing-and-analysis.html#cb34-224"></a>vms.data &lt;-<span class="st"> </span>vms_otm[, columns]</span>
+<span id="cb34-225"><a href="data-processing-and-analysis.html#cb34-225"></a><span class="kw">names</span>(vms.data) &lt;-</span>
+<span id="cb34-226"><a href="data-processing-and-analysis.html#cb34-226"></a>columns &lt;-</span>
+<span id="cb34-227"><a href="data-processing-and-analysis.html#cb34-227"></a><span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,</span>
+<span id="cb34-228"><a href="data-processing-and-analysis.html#cb34-228"></a><span class="st">&quot;y&quot;</span>,</span>
+<span id="cb34-229"><a href="data-processing-and-analysis.html#cb34-229"></a><span class="st">&quot;date&quot;</span>,</span>
+<span id="cb34-230"><a href="data-processing-and-analysis.html#cb34-230"></a><span class="st">&quot;id&quot;</span>,</span>
+<span id="cb34-231"><a href="data-processing-and-analysis.html#cb34-231"></a><span class="st">&quot;burst&quot;</span>,</span>
+<span id="cb34-232"><a href="data-processing-and-analysis.html#cb34-232"></a><span class="st">&quot;abs.angle&quot;</span>,</span>
+<span id="cb34-233"><a href="data-processing-and-analysis.html#cb34-233"></a><span class="st">&quot;LONGITUDE&quot;</span>,</span>
+<span id="cb34-234"><a href="data-processing-and-analysis.html#cb34-234"></a><span class="st">&quot;LATITUDE&quot;</span>,</span>
+<span id="cb34-235"><a href="data-processing-and-analysis.html#cb34-235"></a><span class="st">&quot;line&quot;</span>)</span>
+<span id="cb34-236"><a href="data-processing-and-analysis.html#cb34-236"></a></span>
+<span id="cb34-237"><a href="data-processing-and-analysis.html#cb34-237"></a>Prox_delta &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>)</span>
+<span id="cb34-238"><a href="data-processing-and-analysis.html#cb34-238"></a>DI_beta &lt;-<span class="st"> </span><span class="dv">1</span></span>
+<span id="cb34-239"><a href="data-processing-and-analysis.html#cb34-239"></a></span>
+<span id="cb34-240"><a href="data-processing-and-analysis.html#cb34-240"></a><span class="kw">plots.video.dyads.allgears</span>(</span>
+<span id="cb34-241"><a href="data-processing-and-analysis.html#cb34-241"></a>vms.data,</span>
+<span id="cb34-242"><a href="data-processing-and-analysis.html#cb34-242"></a><span class="dt">dyads =</span> dyads_otm,</span>
+<span id="cb34-243"><a href="data-processing-and-analysis.html#cb34-243"></a><span class="dt">n =</span> <span class="dv">3</span>,</span>
+<span id="cb34-244"><a href="data-processing-and-analysis.html#cb34-244"></a><span class="dt">gear =</span> <span class="st">&quot;OTM&quot;</span>,</span>
+<span id="cb34-245"><a href="data-processing-and-analysis.html#cb34-245"></a><span class="dt">new.variables =</span> variables,</span>
+<span id="cb34-246"><a href="data-processing-and-analysis.html#cb34-246"></a>dossier.data.outputs,</span>
+<span id="cb34-247"><a href="data-processing-and-analysis.html#cb34-247"></a>dossier.stats.outputs,</span>
+<span id="cb34-248"><a href="data-processing-and-analysis.html#cb34-248"></a><span class="dt">text.dyads =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb34-249"><a href="data-processing-and-analysis.html#cb34-249"></a>video.par,</span>
+<span id="cb34-250"><a href="data-processing-and-analysis.html#cb34-250"></a><span class="dt">colores =</span> <span class="kw">c</span>(<span class="st">&quot;#66c2a5&quot;</span>, <span class="st">&quot;#fc8d62&quot;</span>, <span class="st">&quot;#8da0cb&quot;</span>)</span>
+<span id="cb34-251"><a href="data-processing-and-analysis.html#cb34-251"></a>)</span>
+<span id="cb34-252"><a href="data-processing-and-analysis.html#cb34-252"></a></span>
+<span id="cb34-253"><a href="data-processing-and-analysis.html#cb34-253"></a><span class="kw">Fleet.Analysis</span>(</span>
+<span id="cb34-254"><a href="data-processing-and-analysis.html#cb34-254"></a>vms.data,</span>
+<span id="cb34-255"><a href="data-processing-and-analysis.html#cb34-255"></a><span class="dt">dyads =</span> dyads_otm,</span>
+<span id="cb34-256"><a href="data-processing-and-analysis.html#cb34-256"></a>dossier.data.outputs,</span>
+<span id="cb34-257"><a href="data-processing-and-analysis.html#cb34-257"></a>dossier.stats.outputs,</span>
+<span id="cb34-258"><a href="data-processing-and-analysis.html#cb34-258"></a><span class="dt">gear =</span> <span class="st">&quot;OTM&quot;</span></span>
+<span id="cb34-259"><a href="data-processing-and-analysis.html#cb34-259"></a>)</span>
+<span id="cb34-260"><a href="data-processing-and-analysis.html#cb34-260"></a></span>
+<span id="cb34-261"><a href="data-processing-and-analysis.html#cb34-261"></a><span class="co"># For tuna purse-seiners</span></span>
+<span id="cb34-262"><a href="data-processing-and-analysis.html#cb34-262"></a></span>
+<span id="cb34-263"><a href="data-processing-and-analysis.html#cb34-263"></a>dyads_tps &lt;-<span class="st"> </span><span class="kw">readRDS</span>(<span class="dt">file =</span> <span class="kw">paste0</span>(</span>
+<span id="cb34-264"><a href="data-processing-and-analysis.html#cb34-264"></a>dossier.data.outputs,</span>
+<span id="cb34-265"><a href="data-processing-and-analysis.html#cb34-265"></a><span class="st">&#39;ClustPCAoutputs-PTM-thon-&#39;</span>,</span>
+<span id="cb34-266"><a href="data-processing-and-analysis.html#cb34-266"></a><span class="kw">paste0</span>(variables, <span class="dt">collapse =</span> <span class="st">&#39;-&#39;</span>),</span>
+<span id="cb34-267"><a href="data-processing-and-analysis.html#cb34-267"></a><span class="st">&#39;_ordered.rds&#39;</span></span>
+<span id="cb34-268"><a href="data-processing-and-analysis.html#cb34-268"></a>))</span>
+<span id="cb34-269"><a href="data-processing-and-analysis.html#cb34-269"></a></span>
+<span id="cb34-270"><a href="data-processing-and-analysis.html#cb34-270"></a>columns &lt;-</span>
+<span id="cb34-271"><a href="data-processing-and-analysis.html#cb34-271"></a><span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,</span>
+<span id="cb34-272"><a href="data-processing-and-analysis.html#cb34-272"></a><span class="st">&quot;y&quot;</span>,</span>
+<span id="cb34-273"><a href="data-processing-and-analysis.html#cb34-273"></a><span class="st">&quot;date&quot;</span>,</span>
+<span id="cb34-274"><a href="data-processing-and-analysis.html#cb34-274"></a><span class="st">&quot;id&quot;</span>,</span>
+<span id="cb34-275"><a href="data-processing-and-analysis.html#cb34-275"></a><span class="st">&quot;burst&quot;</span>,</span>
+<span id="cb34-276"><a href="data-processing-and-analysis.html#cb34-276"></a><span class="st">&quot;abs.angle&quot;</span>,</span>
+<span id="cb34-277"><a href="data-processing-and-analysis.html#cb34-277"></a><span class="st">&quot;LONGITUDE&quot;</span>,</span>
+<span id="cb34-278"><a href="data-processing-and-analysis.html#cb34-278"></a><span class="st">&quot;LATITUDE&quot;</span>,</span>
+<span id="cb34-279"><a href="data-processing-and-analysis.html#cb34-279"></a><span class="st">&quot;lignes&quot;</span>)</span>
+<span id="cb34-280"><a href="data-processing-and-analysis.html#cb34-280"></a>vms.data &lt;-<span class="st"> </span>vms_thon[, columns]</span>
+<span id="cb34-281"><a href="data-processing-and-analysis.html#cb34-281"></a><span class="kw">names</span>(vms.data) &lt;-</span>
+<span id="cb34-282"><a href="data-processing-and-analysis.html#cb34-282"></a>columns &lt;-</span>
+<span id="cb34-283"><a href="data-processing-and-analysis.html#cb34-283"></a><span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,</span>
+<span id="cb34-284"><a href="data-processing-and-analysis.html#cb34-284"></a><span class="st">&quot;y&quot;</span>,</span>
+<span id="cb34-285"><a href="data-processing-and-analysis.html#cb34-285"></a><span class="st">&quot;date&quot;</span>,</span>
+<span id="cb34-286"><a href="data-processing-and-analysis.html#cb34-286"></a><span class="st">&quot;id&quot;</span>,</span>
+<span id="cb34-287"><a href="data-processing-and-analysis.html#cb34-287"></a><span class="st">&quot;burst&quot;</span>,</span>
+<span id="cb34-288"><a href="data-processing-and-analysis.html#cb34-288"></a><span class="st">&quot;abs.angle&quot;</span>,</span>
+<span id="cb34-289"><a href="data-processing-and-analysis.html#cb34-289"></a><span class="st">&quot;LONGITUDE&quot;</span>,</span>
+<span id="cb34-290"><a href="data-processing-and-analysis.html#cb34-290"></a><span class="st">&quot;LATITUDE&quot;</span>,</span>
+<span id="cb34-291"><a href="data-processing-and-analysis.html#cb34-291"></a><span class="st">&quot;line&quot;</span>)</span>
+<span id="cb34-292"><a href="data-processing-and-analysis.html#cb34-292"></a></span>
+<span id="cb34-293"><a href="data-processing-and-analysis.html#cb34-293"></a>Prox_delta &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">10</span>, <span class="dv">30</span>, <span class="dv">60</span>)</span>
+<span id="cb34-294"><a href="data-processing-and-analysis.html#cb34-294"></a>DI_beta &lt;-<span class="st"> </span><span class="dv">1</span></span>
+<span id="cb34-295"><a href="data-processing-and-analysis.html#cb34-295"></a></span>
+<span id="cb34-296"><a href="data-processing-and-analysis.html#cb34-296"></a><span class="kw">plots.video.dyads.allgears</span>(</span>
+<span id="cb34-297"><a href="data-processing-and-analysis.html#cb34-297"></a>vms.data,</span>
+<span id="cb34-298"><a href="data-processing-and-analysis.html#cb34-298"></a><span class="dt">dyads =</span> dyads_tps,</span>
+<span id="cb34-299"><a href="data-processing-and-analysis.html#cb34-299"></a><span class="dt">n =</span> <span class="dv">3</span>,</span>
+<span id="cb34-300"><a href="data-processing-and-analysis.html#cb34-300"></a><span class="dt">gear =</span> <span class="st">&quot;TPS&quot;</span>,</span>
+<span id="cb34-301"><a href="data-processing-and-analysis.html#cb34-301"></a><span class="dt">new.variables =</span> variables,</span>
+<span id="cb34-302"><a href="data-processing-and-analysis.html#cb34-302"></a>dossier.data.outputs,</span>
+<span id="cb34-303"><a href="data-processing-and-analysis.html#cb34-303"></a>dossier.stats.outputs,</span>
+<span id="cb34-304"><a href="data-processing-and-analysis.html#cb34-304"></a><span class="dt">text.dyads =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb34-305"><a href="data-processing-and-analysis.html#cb34-305"></a>video.par,</span>
+<span id="cb34-306"><a href="data-processing-and-analysis.html#cb34-306"></a><span class="dt">colores =</span> <span class="kw">c</span>(<span class="st">&quot;#66c2a5&quot;</span>, <span class="st">&quot;#fc8d62&quot;</span>, <span class="st">&quot;#8da0cb&quot;</span>)</span>
+<span id="cb34-307"><a href="data-processing-and-analysis.html#cb34-307"></a>)</span>
+<span id="cb34-308"><a href="data-processing-and-analysis.html#cb34-308"></a><span class="co"># Since there are no dyads in group 1, there is no network analysis for this fleet.</span></span>
+<span id="cb34-309"><a href="data-processing-and-analysis.html#cb34-309"></a></span>
+<span id="cb34-310"><a href="data-processing-and-analysis.html#cb34-310"></a><span class="co"># For anchovy purse-seiners</span></span>
+<span id="cb34-311"><a href="data-processing-and-analysis.html#cb34-311"></a></span>
+<span id="cb34-312"><a href="data-processing-and-analysis.html#cb34-312"></a>dyads_aps &lt;-<span class="st"> </span><span class="kw">readRDS</span>(</span>
+<span id="cb34-313"><a href="data-processing-and-analysis.html#cb34-313"></a><span class="dt">file =</span> <span class="kw">paste0</span>(</span>
+<span id="cb34-314"><a href="data-processing-and-analysis.html#cb34-314"></a>dossier.data.outputs,</span>
+<span id="cb34-315"><a href="data-processing-and-analysis.html#cb34-315"></a><span class="st">&#39;ClustPCAoutputs-PTM-APS-10-&#39;</span>,</span>
+<span id="cb34-316"><a href="data-processing-and-analysis.html#cb34-316"></a><span class="kw">paste0</span>(variables, <span class="dt">collapse =</span> <span class="st">&#39;-&#39;</span>),</span>
+<span id="cb34-317"><a href="data-processing-and-analysis.html#cb34-317"></a><span class="st">&#39;_ordered.rds&#39;</span></span>
+<span id="cb34-318"><a href="data-processing-and-analysis.html#cb34-318"></a>)</span>
+<span id="cb34-319"><a href="data-processing-and-analysis.html#cb34-319"></a>)</span>
+<span id="cb34-320"><a href="data-processing-and-analysis.html#cb34-320"></a></span>
+<span id="cb34-321"><a href="data-processing-and-analysis.html#cb34-321"></a>columns &lt;-</span>
+<span id="cb34-322"><a href="data-processing-and-analysis.html#cb34-322"></a><span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,</span>
+<span id="cb34-323"><a href="data-processing-and-analysis.html#cb34-323"></a><span class="st">&quot;y&quot;</span>,</span>
+<span id="cb34-324"><a href="data-processing-and-analysis.html#cb34-324"></a><span class="st">&quot;date&quot;</span>,</span>
+<span id="cb34-325"><a href="data-processing-and-analysis.html#cb34-325"></a><span class="st">&quot;id&quot;</span>,</span>
+<span id="cb34-326"><a href="data-processing-and-analysis.html#cb34-326"></a><span class="st">&quot;burst&quot;</span>,</span>
+<span id="cb34-327"><a href="data-processing-and-analysis.html#cb34-327"></a><span class="st">&quot;abs.angle&quot;</span>,</span>
+<span id="cb34-328"><a href="data-processing-and-analysis.html#cb34-328"></a><span class="st">&quot;LONGITUDE&quot;</span>,</span>
+<span id="cb34-329"><a href="data-processing-and-analysis.html#cb34-329"></a><span class="st">&quot;LATITUDE&quot;</span>,</span>
+<span id="cb34-330"><a href="data-processing-and-analysis.html#cb34-330"></a><span class="st">&quot;ligne&quot;</span>)</span>
+<span id="cb34-331"><a href="data-processing-and-analysis.html#cb34-331"></a>vms.data &lt;-<span class="st"> </span>vms_aps[, columns]</span>
+<span id="cb34-332"><a href="data-processing-and-analysis.html#cb34-332"></a><span class="kw">names</span>(vms.data) &lt;-</span>
+<span id="cb34-333"><a href="data-processing-and-analysis.html#cb34-333"></a>columns &lt;-</span>
+<span id="cb34-334"><a href="data-processing-and-analysis.html#cb34-334"></a><span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,</span>
+<span id="cb34-335"><a href="data-processing-and-analysis.html#cb34-335"></a><span class="st">&quot;y&quot;</span>,</span>
+<span id="cb34-336"><a href="data-processing-and-analysis.html#cb34-336"></a><span class="st">&quot;date&quot;</span>,</span>
+<span id="cb34-337"><a href="data-processing-and-analysis.html#cb34-337"></a><span class="st">&quot;id&quot;</span>,</span>
+<span id="cb34-338"><a href="data-processing-and-analysis.html#cb34-338"></a><span class="st">&quot;burst&quot;</span>,</span>
+<span id="cb34-339"><a href="data-processing-and-analysis.html#cb34-339"></a><span class="st">&quot;abs.angle&quot;</span>,</span>
+<span id="cb34-340"><a href="data-processing-and-analysis.html#cb34-340"></a><span class="st">&quot;LONGITUDE&quot;</span>,</span>
+<span id="cb34-341"><a href="data-processing-and-analysis.html#cb34-341"></a><span class="st">&quot;LATITUDE&quot;</span>,</span>
+<span id="cb34-342"><a href="data-processing-and-analysis.html#cb34-342"></a><span class="st">&quot;line&quot;</span>)</span>
+<span id="cb34-343"><a href="data-processing-and-analysis.html#cb34-343"></a></span>
+<span id="cb34-344"><a href="data-processing-and-analysis.html#cb34-344"></a>Prox_delta &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>)</span>
+<span id="cb34-345"><a href="data-processing-and-analysis.html#cb34-345"></a>DI_beta &lt;-<span class="st"> </span><span class="dv">1</span></span>
+<span id="cb34-346"><a href="data-processing-and-analysis.html#cb34-346"></a></span>
+<span id="cb34-347"><a href="data-processing-and-analysis.html#cb34-347"></a><span class="kw">plots.video.dyads.allgears</span>(</span>
+<span id="cb34-348"><a href="data-processing-and-analysis.html#cb34-348"></a>vms.data,</span>
+<span id="cb34-349"><a href="data-processing-and-analysis.html#cb34-349"></a><span class="dt">dyads =</span> dyads_aps,</span>
+<span id="cb34-350"><a href="data-processing-and-analysis.html#cb34-350"></a><span class="dt">n =</span> <span class="dv">3</span>,</span>
+<span id="cb34-351"><a href="data-processing-and-analysis.html#cb34-351"></a><span class="dt">gear =</span> <span class="st">&quot;APS&quot;</span>,</span>
+<span id="cb34-352"><a href="data-processing-and-analysis.html#cb34-352"></a><span class="dt">new.variables =</span> variables,</span>
+<span id="cb34-353"><a href="data-processing-and-analysis.html#cb34-353"></a>dossier.data.outputs,</span>
+<span id="cb34-354"><a href="data-processing-and-analysis.html#cb34-354"></a>dossier.stats.outputs,</span>
+<span id="cb34-355"><a href="data-processing-and-analysis.html#cb34-355"></a><span class="dt">text.dyads =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb34-356"><a href="data-processing-and-analysis.html#cb34-356"></a>video.par,</span>
+<span id="cb34-357"><a href="data-processing-and-analysis.html#cb34-357"></a><span class="dt">colores =</span> <span class="kw">c</span>(<span class="st">&quot;#66c2a5&quot;</span>, <span class="st">&quot;#fc8d62&quot;</span>, <span class="st">&quot;#8da0cb&quot;</span>)</span>
+<span id="cb34-358"><a href="data-processing-and-analysis.html#cb34-358"></a>)</span>
+<span id="cb34-359"><a href="data-processing-and-analysis.html#cb34-359"></a></span>
+<span id="cb34-360"><a href="data-processing-and-analysis.html#cb34-360"></a><span class="kw">Fleet.Analysis</span>(</span>
+<span id="cb34-361"><a href="data-processing-and-analysis.html#cb34-361"></a>vms.data,</span>
+<span id="cb34-362"><a href="data-processing-and-analysis.html#cb34-362"></a><span class="dt">dyads =</span> dyads_aps,</span>
+<span id="cb34-363"><a href="data-processing-and-analysis.html#cb34-363"></a>dossier.data.outputs,</span>
+<span id="cb34-364"><a href="data-processing-and-analysis.html#cb34-364"></a>dossier.stats.outputs,</span>
+<span id="cb34-365"><a href="data-processing-and-analysis.html#cb34-365"></a><span class="dt">gear =</span> <span class="st">&quot;APS&quot;</span></span>
+<span id="cb34-366"><a href="data-processing-and-analysis.html#cb34-366"></a>)</span></code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="supplementary-results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
