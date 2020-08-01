@@ -36,9 +36,6 @@ plot.dyad.allgears = function(data.video,file.name,point.size=0.6,dossier.stats.
     }
   })
 
-    # legend("bottomright",legend=as.character(data.video$id[ind.bateaux]),col=data.video$colores[ind.bateaux],
-    #      lty=data.video$traits[ind.bateaux],
-    #      bty = "n",text.col = 'black',cex = 1,lwd=3)
   dev.off()
   
 }

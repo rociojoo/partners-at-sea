@@ -47,8 +47,7 @@ stats_clusters <- function(k, dyads_cluster){
       round(stats.clusters$Dyads[x + 1] / dim(dyads_cluster)[1] * 100, 2)
     stats.clusters$Duration[x + 1] <<-
       round(median(dyads_cluster$dur[ind]), 2)
-    # stats.clusters$PC1[x + 1] <<-
-    #   round(median(dyads_cluster$pca1[ind]), 2)
+    
   })
   
   return(stats.clusters)

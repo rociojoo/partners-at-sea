@@ -56,7 +56,9 @@ These functions are [here](https://github.com/rociojoo/partners-at-sea/tree/mast
 ## Gaussian mixture modeling
 
 ```{r GMMs, include = TRUE, echo=TRUE, eval = FALSE}
-load(paste0(dossier.data.outputs, "all_dyads.RData")) # dyads and metrics
+# load(paste0(dossier.data.outputs, "all_dyads.RData")) # dyads and metrics
+dyads <- readRDS(file = paste0(dossier.data.outputs,"all_dyads_vJ.rds")) 
+# dyads and metrics
 
 variables <- c("Prox", "DI.theta", "DI.d")
 gear <- "all"
@@ -169,6 +171,7 @@ p_cluster = apply(BestModel@bestResult@proba, 1, max)
 ) -> dta
 
 # overlapping index
+mean_variance <- NULL
 mean_variance$means <- BestModel@bestResult@parameters@mean
 
 mean_variance$variance <- BestModel@bestResult@parameters@variance
@@ -277,6 +280,10 @@ order_clust <-
   ))
   
   # Now plotting distributions of probabilities per cluster
+  
+  # median posterior probability per cluster
+  dta %>% group_by(group) %>% summarise(median(p_cluster)) 
+  
   ggplot(data = dta, aes (x = group, y = p_cluster, fill = group)) +
   geom_boxplot() +
   scale_fill_viridis(discrete = TRUE)  +
@@ -554,7 +561,7 @@ DI_beta <- 1
 plots.video.dyads.allgears(
 vms.data,
 dyads = dyads_ptm,
-n = 3,
+n = 1,
 gear = "PTM",
 new.variables = variables,
 dossier.data.outputs,
@@ -613,7 +620,7 @@ DI_beta <- 1
 plots.video.dyads.allgears(
 vms.data,
 dyads = dyads_lotb,
-n = 3,
+n = 1,
 gear = "LOTB",
 new.variables = variables,
 dossier.data.outputs,
@@ -672,7 +679,7 @@ DI_beta <- 1
 plots.video.dyads.allgears(
 vms.data,
 dyads = dyads_sotb,
-n = 3,
+n = 1,
 gear = "SOTB",
 new.variables = variables,
 dossier.data.outputs,
@@ -730,7 +737,7 @@ DI_beta <- 1
 plots.video.dyads.allgears(
 vms.data,
 dyads = dyads_otm,
-n = 3,
+n = 1,
 gear = "OTM",
 new.variables = variables,
 dossier.data.outputs,
@@ -786,7 +793,7 @@ DI_beta <- 1
 plots.video.dyads.allgears(
 vms.data,
 dyads = dyads_tps,
-n = 3,
+n = 1,
 gear = "TPS",
 new.variables = variables,
 dossier.data.outputs,
@@ -837,7 +844,7 @@ DI_beta <- 1
 plots.video.dyads.allgears(
 vms.data,
 dyads = dyads_aps,
-n = 3,
+n = 1,
 gear = "APS",
 new.variables = variables,
 dossier.data.outputs,

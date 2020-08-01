@@ -18,13 +18,6 @@ dyad_classif <- function(gear, variables, dyads, BestModel, k, order_clust, clus
   
   dyads %>%  filter(gear.1 == gear) %>% select(variables) -> dta_gear
   
-  # dta_gear_scaled <- scale(x = dta_gear, scale = TRUE, center = TRUE)
-  # dta_gear_scores <- dta_gear_scaled%*%load_pca[,1:2]
-  # 
-  # # # res_pca_gear <- PCA(dta_gear, scale.unit = TRUE, ncp = 3)
-  # # dta_gear %>% mutate(pca1 = res_pca_gear$ind$coord[, 1], pca2 = res_pca_gear$ind$coord[, 2]) -> dta_gear # adding components to dataframe
-  # dta_gear %>% mutate(pca1 = dta_gear_scores[,1], pca2 = dta_gear_scores[,2]) -> dta_gear
-  # 
   prediction <-
     mixmodPredict(data = dta_gear[, 1:3], classificationRule = BestModel["bestResult"])
   
@@ -72,24 +65,6 @@ dyad_classif <- function(gear, variables, dyads, BestModel, k, order_clust, clus
     ".png"
   ))
   
-  # # PCA plot with only 2 groups (2 and 3 merged in one)
-  # dta_gear$partners <- rep(0,dim(dta_gear)[1])
-  # dta_gear$partners[which(dta_gear$clust_new_order == 1)] <- 1
-  # dta_gear %>% ggplot(aes(x = pca1, y = pca2, col = as.factor(partners))) + geom_point(alpha = 0.25, show.legend = FALSE) + xlab('PC1') + ylab('PC2') + scale_colour_viridis_d(direction = -1) + theme_bw()
-  # # 
-  # # dta_gear %>% ggplot(aes(x = score1, y = score2, col = group)) + geom_point(alpha = 0.25) + scale_colour_viridis_d() + theme_bw()
-  # ggsave(paste0(
-  #   dossier.stats.outputs,
-  #   "clustFree_PCA_TwoGroups_PTM_",
-  #   gear,
-  #   ".pdf"
-  # ))
-  # ggsave(paste0(
-  #   dossier.stats.outputs,
-  #   "clustFree_PCA_TwoGroups_PTM_",
-  #   gear,
-  #   ".png"
-  # ))
   # 
   perc_table_gear <-
     round(prop.table(table(dta_gear$group)) * 100, 1)
@@ -105,24 +80,52 @@ dyad_classif <- function(gear, variables, dyads, BestModel, k, order_clust, clus
   sink()
   
   # Now plotting distributions of probabilities per cluster
-  ggplot(data = dta_gear, aes (x = group, y = p_cluster, fill = group)) +
-    geom_boxplot() +
-    scale_fill_viridis(discrete = TRUE)  +
-    theme_bw() +
-    xlab('') + ylab("") +
-    theme(legend.position = "none", text = element_text(size = 18))
-  ggsave(paste0(
-    dossier.stats.outputs,
-    "clustFree_proba_PTM_",
-    gear,
-    "_ordered.pdf"
-  ))
-  ggsave(paste0(
-    dossier.stats.outputs,
-    "clustFree_proba_PTM_",
-    gear,
-    "_ordered.png"
-  ))
+   
+  if (nlevels(dta_gear$group) == 2){
+    dta_gear_mod <- dta_gear %>% select(p_cluster,group)
+    dta_gear_mod$group <- as.numeric(as.character(dta_gear_mod$group))
+    dta_gear_mod <- rbind.data.frame(c(NA,1),dta_gear_mod)
+    dta_gear_mod$group <- as.factor(dta_gear_mod$group)
+    ggplot(data = dta_gear_mod, aes (x = group, y = p_cluster, fill = group)) +
+      geom_boxplot() +
+      scale_fill_viridis(discrete = TRUE, begin = 0.5)  +
+      theme_bw() +
+      xlab('') + ylab("") +
+      theme(legend.position = "none", text = element_text(size = 18))
+    ggsave(paste0(
+      dossier.stats.outputs,
+      "clustFree_proba_PTM_",
+      gear,
+      "_ordered.pdf"
+    ))
+    ggsave(paste0(
+      dossier.stats.outputs,
+      "clustFree_proba_PTM_",
+      gear,
+      "_ordered.png"
+    ))
+    
+  }else{
+    
+    ggplot(data = dta_gear, aes (x = group, y = p_cluster, fill = group)) +
+      geom_boxplot() +
+      scale_fill_viridis(discrete = TRUE)  +
+      theme_bw() +
+      xlab('') + ylab("") +
+      theme(legend.position = "none", text = element_text(size = 18))
+    ggsave(paste0(
+      dossier.stats.outputs,
+      "clustFree_proba_PTM_",
+      gear,
+      "_ordered.pdf"
+    ))
+    ggsave(paste0(
+      dossier.stats.outputs,
+      "clustFree_proba_PTM_",
+      gear,
+      "_ordered.png"
+    ))
+  }
   
   
   dta_facto_gear  <- dta_gear[, c(1, 2, 3, 7)]
@@ -160,27 +163,6 @@ dyad_classif <- function(gear, variables, dyads, BestModel, k, order_clust, clus
     ), width = 8
   )
   
-  # 
-  # ggplot(data = dta_gather_gear, aes (x = metric, y = value, fill = group)) +
-  #   geom_violin(position = "dodge") + scale_fill_viridis(discrete = TRUE) + theme_bw() +
-  #   xlab('') + ylab("") +
-  #   theme(legend.position = "none", text = element_text(size = 18))
-  # ggsave(
-  #   paste0(
-  #     dossier.stats.outputs,
-  #     "clustFree_MetricsViolin_PTM_",
-  #     gear,
-  #     "_ordered.pdf"
-  #   )
-  # )
-  # ggsave(
-  #   paste0(
-  #     dossier.stats.outputs,
-  #     "clustFree_MetricsViolin_PTM_",
-  #     gear,
-  #     "_ordered.png"
-  #   )
-  # )
   # 
   ####### stats from clustering for tables #######
   # dyads_cluster <- dyads %>% filter(gear.1 == "PTM")
@@ -229,18 +211,6 @@ dyad_classif <- function(gear, variables, dyads, BestModel, k, order_clust, clus
       'ordered.txt'
     )
   )
-  
-  # Comparison with first PTM cluster
-  
-  # histograms
-  # test <- ggplot(data = dta_gather, aes(x = value, color = group)) + 
-  #   geom_histogram(fill = "white", position = "dodge") +
-  #   # geom_density(alpha=0.6)+
-  #   facet_wrap(facets = vars(metric), scales = "free") +
-  #   scale_color_viridis(discrete = TRUE) +
-  #   theme_bw() +
-  #   xlab('') + ylab("") +
-  #   theme(legend.position = "none", text = element_text(size = 16))
   
   ptm_cluster_1 <- dta %>% 
     filter(group == 1)

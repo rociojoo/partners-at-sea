@@ -2,16 +2,8 @@ video.dyad.general.allgears = function(data.video,file.name,image.name,image.dir
                               point.size=0.6,traza=11){ 
   x <- data.video$LONGITUDE
   y <- data.video$LATITUDE
-  # if (range.x == FALSE){
-    xlim = range(x) 
-  # }else{
-  #   xlim = range.x
-  # }
-  # if (range.y == FALSE){
-    ylim = range(y) 
-  # }else{
-  #   ylim = range.y
-  # }
+  xlim = range(x) 
+  ylim = range(y) 
   
   tiempos <- unique(data.video$date)
   
@@ -66,7 +58,7 @@ video.dyad.general.allgears = function(data.video,file.name,image.name,image.dir
                 orig <- ind.time.orig[1]
               }
               
-              # orig <- t - traza
+             
             }
             
             segments(x[vector.2[ind.bato[orig:t]]],y[ind.bato[vector.2[orig:t]]],
@@ -91,27 +83,6 @@ video.dyad.general.allgears = function(data.video,file.name,image.name,image.dir
           }
         })
       }
-      
-      # if (anonymity == FALSE){
-      #   plot(land,add=T,col=land.color)
-      #   if (harbour.info==TRUE){      
-      #     text(x=harbour.data$harbours.lon,harbour.data$harbours.lat,labels=harbour.data$port,cex=0.6,col = 'black')
-      #   }
-      # }
-      
-      # if (is.null(engin.args) == FALSE){
-      #   if (legend.gears == TRUE){
-      #     legend("bottomleft",legend=as.character(engin.args$engins[-dim(engin.args)[1]]),pch=engin.args$pch.engin[-dim(engin.args)[1]],border='black',pt.bg=engin.args$col.engin[-dim(engin.args)[1]],
-      #            bty = "n",text.col = 'black',cex = 0.8)
-      #   }
-      # }
-      # if (legend.vessels == TRUE){
-      #   ind.dyad <- which(data.video$traits[ind.bateaux] == 1)
-      #   legend("bottomright",legend=as.character(data.video$id[ind.bateaux[ind.dyad]]),
-      #          col=data.video$colores[ind.bateaux[ind.dyad]],
-      #          lty=data.video$traits[ind.bateaux[ind.dyad]],
-      #          bty = "n",text.col = col.text.bat,cex = 1,lwd=data.video$epaisseur[ind.bateaux[ind.dyad]])
-      # }
       
       ani.pause()
       

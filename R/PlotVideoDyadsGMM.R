@@ -25,6 +25,10 @@ plots.video.dyads.allgears <- function(vms.data, dyads, n=5, gear, new.variables
     
   }
   
+  if (dir.exists(paste0(dossier.stats.outputs, gear)) == FALSE){
+    dir.create(paste0(dossier.stats.outputs, gear)) 
+  }
+  
   
   action <- sapply(1:(dim(echantillon)[1]),function(x){
     print(x)
@@ -35,19 +39,12 @@ plots.video.dyads.allgears <- function(vms.data, dyads, n=5, gear, new.variables
     
     vms.year <- vms.data[which(lubridate:::year(vms.data$date) == echant$year),]
     
-    # if (fleet == "tuna purse-seiners"){
+    
     first_lines <- sapply(echant$first.line.1:echant$last.line.1,function(x) match(x,vms.year$line)) # if error, try line.first.1 and line.last.1
     tr1 <- vms.year[first_lines,]
     first_lines <- sapply(echant$first.line.2:echant$last.line.2,function(x) match(x,vms.year$line)) # if error, try line.first.1 and line.last.1
     tr2 <- vms.year[first_lines,] # idem
-    # }else{
-    # tr1 <- vms.year[echant$first.line.1:echant$last.line.1,] # if error, try line.first.1 and line.last.1
-    # tr2 <- vms.year[echant$first.line.2:echant$last.line.2,] # idem
-    # }
-    
-    # 
-    # tr1 <- vms.year[echant$first.line.1:echant$last.line.1,] # if error, try line.first.1 and line.last.1
-    # tr2 <- vms.year[echant$first.line.2:echant$last.line.2,] # idem
+   
     
     if (text.dyads == TRUE){
       dyad_info_gral_allgears(tr1,tr2,echant,file.name=dyad.file)
@@ -60,9 +57,9 @@ plots.video.dyads.allgears <- function(vms.data, dyads, n=5, gear, new.variables
     
     data.plot.2 <- pre.video.modif.allgears(subset.plot = matriz, epais = video.par$epais)
     
-    # if (video.par$anonymity == TRUE){
+    
     Name.Mod <- "Modif"
-    # puertos.info <- NULL
+    
     
     
     if (video.par$type == 'video' || video.par$type == 'all'){
@@ -86,20 +83,13 @@ plots.video.dyads.allgears <- function(vms.data, dyads, n=5, gear, new.variables
         
         if (dir.exists(image.dir.movie)){
           print(paste0(name,' already exists, so not doing anything!'))
-          # 
-          # old.path <- getwd()
-          # setwd(paste0(dossier.stats.outputs,"Movies/",gear,"/")) # t
-          # print(getwd())
-          # setwd(old.path)
-          # # unlink(image.dir,recursive=TRUE)
+          
         }else{
           
           if (x == 1){
             dir.create(image.dir.movie,recursive=TRUE) # creating directory where png files will be stocked
           }else{dir.create(image.dir.movie,recursive=FALSE)} # creating directory where png files will be stocked
           
-          # old.path <- getwd()
-          # setwd(paste0(dossier.stats.outputs,"Movies/")) # this if for the html file
           png.dir <- paste0(dossier.stats.outputs,gear,"/Movies/",name)
           
           # creating html
@@ -108,13 +98,11 @@ plots.video.dyads.allgears <- function(vms.data, dyads, n=5, gear, new.variables
           
           if (video.par$mp4 == TRUE){
             # creating mp4 (needs png created during html process)
-            # setwd(image.dir.movie)
+            
             fichiers= paste0(image.dir.movie,"/",image.name,"%d.png")
             fichier_out <- paste0(dossier.stats.outputs,gear,"/Movies/",name,".mp4")
             system(paste("ffmpeg -framerate 10 -i ",fichiers," -c:v libx264 ", fichier_out,sep=""))
           }
-          
-          # setwd(old.path)
           
         }
         
@@ -137,7 +125,7 @@ plots.video.dyads.allgears <- function(vms.data, dyads, n=5, gear, new.variables
     
     if (video.par$type == 'plot' || video.par$type == 'all'){
       
-      image.name <- paste0("plot-id-",bato1,'-',bato2,"-",
+      image.name <- paste0("plot-id-",str_replace_all(bato1, fixed(" "), ""),'-',str_replace_all(bato2, fixed(" "), ""),"-",
                            paste(unlist(strsplit(as.character(date(fecha.min)),"-")),collapse = ""),"-",
                            paste(unlist(strsplit(as.character(date(fecha.max)),"-")),collapse = ""),
                            '-cl-',echant$clust_new_order)

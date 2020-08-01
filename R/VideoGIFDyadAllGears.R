@@ -95,15 +95,3 @@ video.dyad.gif.allgears = function(data.video,file.name,image.name,image.dir,sle
   
 }
 
-
-# saveGIF({
-#   for (i in unique(barco$Cod.Viaje.VMS)){
-#     
-#     barcoViaje <- barco[barco$Cod.Viaje.VMS == i,]
-#     plot(barcoViaje$LONGITUDE, barcoViaje$LATITUDE, type = "o", pch = 16, col = 4, 
-#          ylab = "LATIDUD",
-#          xlab = "LATITUD", xlim = c(-80,-75), ylim = c(-15,-8))
-#     lines(shoreline)
-#     
-#   }#})
-# }, movie.name = "barco.gif", interval = 0.5, nmax = 30)
