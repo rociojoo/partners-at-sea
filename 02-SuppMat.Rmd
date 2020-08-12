@@ -132,7 +132,7 @@ Histogram for each group per metric.
   <center>
 ![](images/SOTB/film-Modif-Two-SOTB-id-14288-14899-20130307-20130307-cl-3.gif){width=40%}  ![](images/SOTB/VariableSeries-id-14288-14899-20130307-20130307-cl-3-DISTANCE.gif){width=40%}
 
-![](images/SOTB/VariableSeries-id-14288-14899-20130307-20130307-DItheta.gif){width=40%} 
+![](images/SOTB/VariableSeries-id-14288-14899-20130307-20130307-cl-3-DItheta.gif){width=40%} 
 ![](images/SOTB/VariableSeries-id-14288-14899-20130307-20130307-cl-3-DId.gif){width=40%}
 
 </center>
