@@ -1,6 +1,6 @@
 # Supplementary results
 
-For each fleet, the most representative dyad in each group is shown through a spatial representation (the locations have been transformed to respect confidentiality agreements with some of the data providers) and time series of distance (in km), DItheta and DId.
+For each fleet, the most representative dyad in each group is shown through a spatial representation (the locations have been transformed to respect confidentiality agreements with some of the data providers) and time series of distance (in km), DItheta and DId. The numbers in parenthesis in the distance graphs indicate values of Prox with $\delta$ equal to 1, 3 or 5.
 
 ## Pelagic pair trawlers 
 
