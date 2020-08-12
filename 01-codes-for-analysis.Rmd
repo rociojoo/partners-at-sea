@@ -12,7 +12,7 @@ The data shared in this repository are only at the scale of dyads, and not locat
 
 Calling packages, setting up data, auxiliary code, stats and figure paths, and sourcing functions:
 
-```{r setup, include = TRUE}
+```{r setup, include = TRUE, warning=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(lubridate) # date function
 library(magrittr) # pipes
@@ -514,8 +514,17 @@ video.par$sleep = 0.25 # time between frames (quarter of a second)
 video.par$point.size = 1.2 # size of points in the plots and animations
 
 # VMS data
-load(paste0(dossier.data.outputs, 'vms_2012-2013.RData')) #
-vms_trawlers <- vms.data
+load(paste0(dossier.data.outputs,'DATA_TRAJECTORIES_YEAR_2012_GAP_3H.rdata'))
+vms_data_2012 <- data.trajectories$DATA.TRAJECTORIES
+load(paste0(dossier.data.outputs,'DATA_TRAJECTORIES_YEAR_2013_GAP_3H.rdata'))
+vms_data_2013 <- data.trajectories$DATA.TRAJECTORIES
+vms_trawlers <- rbind.data.frame(vms_data_2012, vms_data_2013)
+colnames(vms_trawlers) <- c("x", "y", "date", old_names[4:8],
+                             "abs.angle", old_names[10], "id", "burst",
+                             old_names[13:30], "gear.maree", old_names[32],
+                             "LONGITUDE", "LATITUDE", 'line', old_names[36:38])
+rm(vms_data_2012, vms_data_2013, data.trajectories)
+
 load(paste0(dossier.data.outputs, 'vms_thon_2011-2013.RData'))
 vms_thon <- vms.data.years
 load(paste0(dossier.data.outputs, "vms_data_10.RData"))
@@ -541,19 +550,8 @@ c("x",
 "abs.angle",
 "LONGITUDE",
 "LATITUDE",
-"ligne")
-vms.data <- vms_ptm[, columns]
-names(vms.data) <-
-columns <-
-c("x",
-"y",
-"date",
-"id",
-"burst",
-"abs.angle",
-"LONGITUDE",
-"LATITUDE",
 "line")
+vms.data <- vms_ptm[, columns]
 
 Prox_delta <- c(1, 3, 5)
 DI_beta <- 1
@@ -582,8 +580,7 @@ gear = "PTM"
 # For larger bottom otter trawlers
 
 vms_lotb <-
-vms_trawlers[which(as.character(vms_trawlers$gear.maree) == "OTB" &
-vms_trawlers$small == 0), ]
+vms_trawlers[which(as.character(vms_trawlers$gear.maree) == "OTB"), ]
 dyads_lotb <- readRDS(file = paste0(
 dossier.data.outputs,
 'ClustPCAoutputs-PTM-LOTB-',
@@ -600,19 +597,8 @@ c("x",
 "abs.angle",
 "LONGITUDE",
 "LATITUDE",
-"ligne")
-vms.data <- vms_lotb[, columns]
-names(vms.data) <-
-columns <-
-c("x",
-"y",
-"date",
-"id",
-"burst",
-"abs.angle",
-"LONGITUDE",
-"LATITUDE",
 "line")
+vms.data <- vms_lotb[, columns]
 
 Prox_delta <- c(1, 3, 5)
 DI_beta <- 1
@@ -641,8 +627,7 @@ gear = "LOTB"
 # For small bottom otter trawlers
 
 vms_sotb <-
-vms_trawlers[which(as.character(vms_trawlers$gear.maree) == "OTB" &
-vms_trawlers$small == 1), ]
+vms_trawlers[which(as.character(vms_trawlers$gear.maree) == "OTB_SMALL"), ]
 dyads_sotb <- readRDS(file = paste0(
 dossier.data.outputs,
 'ClustPCAoutputs-PTM-SOTB-',
@@ -659,19 +644,8 @@ c("x",
 "abs.angle",
 "LONGITUDE",
 "LATITUDE",
-"ligne")
-vms.data <- vms_sotb[, columns]
-names(vms.data) <-
-columns <-
-c("x",
-"y",
-"date",
-"id",
-"burst",
-"abs.angle",
-"LONGITUDE",
-"LATITUDE",
 "line")
+vms.data <- vms_sotb[, columns]
 
 Prox_delta <- c(1, 3, 5)
 DI_beta <- 1
@@ -717,19 +691,8 @@ c("x",
 "abs.angle",
 "LONGITUDE",
 "LATITUDE",
-"ligne")
-vms.data <- vms_otm[, columns]
-names(vms.data) <-
-columns <-
-c("x",
-"y",
-"date",
-"id",
-"burst",
-"abs.angle",
-"LONGITUDE",
-"LATITUDE",
 "line")
+vms.data <- vms_otm[, columns]
 
 Prox_delta <- c(1, 3, 5)
 DI_beta <- 1
