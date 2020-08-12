@@ -1,5 +1,7 @@
 # Supplementary results
 
+For each fleet, the most representative dyad in each group is shown through a spatial representation (the locations have been transformed to respect confidentiality agreements with some of the data providers) and time series of distance (in km), DItheta and DId.
+
 ## Pelagic pair trawlers 
 
  <center>
@@ -15,10 +17,10 @@ Histogram for each group per metric.
 ### Group 1: most representative example
 
   <center>
-![](images/PTM/film-Modif-Two-PTM-id-18027-7955-20131112-20131113-cl-1.gif){width=40%}  ![](images/PTM/VariableSeries-id-18027-7955-20131112-20131113-cl-1-DISTANCE.gif){width=40%}
+![](images/PTM/film-Modif-Two-PTM-id-7955-18027-20131011-20131012-cl-1.gif){width=40%}  ![](images/PTM/VariableSeries-id-7955-18027-20131011-20131012-cl-1-DISTANCE.gif){width=40%}
 
-![](images/PTM/VariableSeries-id-18027-7955-20131112-20131113-cl-1-DItheta.gif){width=40%} 
-![](images/PTM/VariableSeries-id-18027-7955-20131112-20131113-cl-1-DId.gif){width=40%}
+![](images/PTM/VariableSeries-id-7955-18027-20131011-20131012-cl-1-DItheta.gif){width=40%} 
+![](images/PTM/VariableSeries-id-7955-18027-20131011-20131012-cl-1-DId.gif){width=40%}
 
 </center>
 
@@ -26,10 +28,10 @@ Histogram for each group per metric.
 ### Group 2: most representative example
 
   <center>
-![](images/PTM/film-Modif-Two-PTM-id-18027-24896-20120822-20120823-cl-2.gif){width=40%}  ![](images/PTM/VariableSeries-id-18027-24896-20120822-20120823-cl-2-DISTANCE.gif){width=40%}
+![](images/PTM/film-Modif-Two-PTM-id-7955-24896-20120822-20120823-cl-2.gif){width=40%}  ![](images/PTM/VariableSeries-id-7955-24896-20120822-20120823-cl-2-DISTANCE.gif){width=40%}
 
-![](images/PTM/VariableSeries-id-18027-24896-20120822-20120823-cl-2-DItheta.gif){width=40%} 
-![](images/PTM/VariableSeries-id-18027-24896-20120822-20120823-cl-2-DId.gif){width=40%}
+![](images/PTM/VariableSeries-id-7955-24896-20120822-20120823-cl-2-DItheta.gif){width=40%} 
+![](images/PTM/VariableSeries-id-7955-24896-20120822-20120823-cl-2-DId.gif){width=40%}
 
 </center>
 
@@ -37,10 +39,10 @@ Histogram for each group per metric.
 ### Group 3: most representative example
 
   <center>
-![](images/PTM/film-Modif-Two-PTM-id-22920-28144-20130826-20130827-cl-3.gif){width=40%}  ![](images/PTM/VariableSeries-id-22920-28144-20130826-20130827-cl-3-DISTANCE.gif){width=40%}
+![](images/PTM/film-Modif-Two-PTM-id-1661-9410-20130901-20130904-cl-3.gif){width=40%}  ![](images/PTM/VariableSeries-id-1661-9410-20130901-20130904-cl-3-DISTANCE.gif){width=40%}
 
-![](images/PTM/VariableSeries-id-22920-28144-20130826-20130827-cl-3-DItheta.gif){width=40%} 
-![](images/PTM/VariableSeries-id-22920-28144-20130826-20130827-cl-3-DId.gif){width=40%}
+![](images/PTM/VariableSeries-id-1661-9410-20130901-20130904-cl-3-DItheta.gif){width=40%} 
+![](images/PTM/VariableSeries-id-1661-9410-20130901-20130904-cl-3-DId.gif){width=40%}
 
 </center>
 
@@ -60,10 +62,10 @@ Histogram for each group per metric.
 ### Group 1: most representative example
 
   <center>
-![](images/LOTB/film-Modif-Two-LOTB-id-21539-24896-20130916-20130918-cl-1.gif){width=40%}  ![](images/LOTB/VariableSeries-id-21539-24896-20130916-20130918-cl-1-DISTANCE.gif){width=40%}
+![](images/LOTB/film-Modif-Two-LOTB-id-11467-14758-20121112-20121113-cl-1.gif){width=40%}  ![](images/LOTB/VariableSeries-id-11467-14758-20121112-20121113-cl-1-DISTANCE.gif){width=40%}
 
-![](images/LOTB/VariableSeries-id-21539-24896-20130916-20130918-cl-1-DItheta.gif){width=40%} 
-![](images/LOTB/VariableSeries-id-21539-24896-20130916-20130918-cl-1-DId.gif){width=40%}
+![](images/LOTB/VariableSeries-id-11467-14758-20121112-20121113-cl-1-DItheta.gif){width=40%} 
+![](images/LOTB/VariableSeries-id-11467-14758-20121112-20121113-cl-1-DId.gif){width=40%}
 
 </center>
 
@@ -71,10 +73,10 @@ Histogram for each group per metric.
 ### Group 2: most representative example
 
   <center>
-![](images/LOTB/film-Modif-Two-LOTB-id-10888-21050-20120411-20120412-cl-2.gif){width=40%}  ![](images/LOTB/VariableSeries-id-10888-21050-20120411-20120412-cl-2-DISTANCE.gif){width=40%}
+![](images/LOTB/film-Modif-Two-LOTB-id-803-17604-20120410-20120411-cl-2.gif){width=40%}  ![](images/LOTB/VariableSeries-id-803-17604-20120410-20120411-cl-2-DISTANCE.gif){width=40%}
 
-![](images/LOTB/VariableSeries-id-10888-21050-20120411-20120412-cl-2-DItheta.gif){width=40%} 
-![](images/LOTB/VariableSeries-id-10888-21050-20120411-20120412-cl-2-DId.gif){width=40%}
+![](images/LOTB/VariableSeries-id-803-17604-20120410-20120411-cl-2-DItheta.gif){width=40%} 
+![](images/LOTB/VariableSeries-id-803-17604-20120410-20120411-cl-2-DId.gif){width=40%}
 
 </center>
 
@@ -82,10 +84,10 @@ Histogram for each group per metric.
 ### Group 3: most representative example
 
   <center>
-![](images/LOTB/film-Modif-Two-LOTB-id-5976-9343-20121001-20121002-cl-3.gif){width=40%}  ![](images/LOTB/VariableSeries-id-5976-9343-20121001-20121002-cl-3-DISTANCE.gif){width=40%}
+![](images/LOTB/film-Modif-Two-LOTB-id-7593-24433-20130904-20130905-cl-3.gif){width=40%}  ![](images/LOTB/VariableSeries-id-7593-24433-20130904-20130905-cl-3-DISTANCE.gif){width=40%}
 
-![](images/LOTB/VariableSeries-id-5976-9343-20121001-20121002-cl-3-DItheta.gif){width=40%} 
-![](images/LOTB/VariableSeries-id-5976-9343-20121001-20121002-cl-3-DId.gif){width=40%}
+![](images/LOTB/VariableSeries-id-7593-24433-20130904-20130905-cl-3-DItheta.gif){width=40%} 
+![](images/LOTB/VariableSeries-id-7593-24433-20130904-20130905-cl-3-DId.gif){width=40%}
 
 </center>
 
@@ -106,10 +108,10 @@ Histogram for each group per metric.
 ### Group 1: most representative example
 
   <center>
-![](images/SOTB/film-Modif-Two-SOTB-id-11321-14767-20130620-20130621-cl-1.gif){width=40%}  ![](images/SOTB/VariableSeries-id-11321-14767-20130620-20130621-cl-1-DISTANCE.gif){width=40%}
+![](images/SOTB/film-Modif-Two-SOTB-id-24782-26984-20121114-20121115-cl-1.gif){width=40%}  ![](images/SOTB/VariableSeries-id-24782-26984-20121114-20121115-cl-1-DISTANCE.gif){width=40%}
 
-![](images/SOTB/VariableSeries-id-11321-14767-20130620-20130621-cl-1-DItheta.gif){width=40%} 
-![](images/SOTB/VariableSeries-id-11321-14767-20130620-20130621-cl-1-DId.gif){width=40%}
+![](images/SOTB/VariableSeries-id-24782-26984-20121114-20121115-cl-1-DItheta.gif){width=40%} 
+![](images/SOTB/VariableSeries-id-24782-26984-20121114-20121115-cl-1-DId.gif){width=40%}
 
 </center>
 
@@ -117,10 +119,10 @@ Histogram for each group per metric.
 ### Group 2: most representative example
 
   <center>
-![](images/SOTB/film-Modif-Two-SOTB-id-10961-22843-20120823-20120824-cl-2.gif){width=40%}  ![](images/SOTB/VariableSeries-id-10961-22843-20120823-20120824-cl-2-DISTANCE.gif){width=40%}
+![](images/SOTB/film-Modif-Two-SOTB-id-803-17688-20120731-20120801-cl-2.gif){width=40%}  ![](images/SOTB/VariableSeries-id-803-17688-20120731-20120801-cl-2-DISTANCE.gif){width=40%}
 
-![](images/SOTB/VariableSeries-id-10961-22843-20120823-20120824-cl-2-DItheta.gif){width=40%} 
-![](images/SOTB/VariableSeries-id-10961-22843-20120823-20120824-cl-2-DId.gif){width=40%}
+![](images/SOTB/VariableSeries-id-803-17688-20120731-20120801-cl-2-DItheta.gif){width=40%} 
+![](images/SOTB/VariableSeries-id-803-17688-20120731-20120801-cl-2-DId.gif){width=40%}
 
 </center>
 
@@ -128,10 +130,10 @@ Histogram for each group per metric.
 ### Group 3: most representative example
 
   <center>
-![](images/SOTB/film-Modif-Two-SOTB-id-28994-7544-20130705-20130706-cl-3.gif){width=40%}  ![](images/SOTB/VariableSeries-id-28994-7544-20130705-20130706-cl-3-DISTANCE.gif){width=40%}
+![](images/SOTB/film-Modif-Two-SOTB-id-14288-14899-20130307-20130307-cl-3.gif){width=40%}  ![](images/SOTB/VariableSeries-id-14288-14899-20130307-20130307-cl-3-DISTANCE.gif){width=40%}
 
-![](images/SOTB/VariableSeries-id-28994-7544-20130705-20130706-cl-3-DItheta.gif){width=40%} 
-![](images/SOTB/VariableSeries-id-28994-7544-20130705-20130706-cl-3-DId.gif){width=40%}
+![](images/SOTB/VariableSeries-id-14288-14899-20130307-20130307-DItheta.gif){width=40%} 
+![](images/SOTB/VariableSeries-id-14288-14899-20130307-20130307-cl-3-DId.gif){width=40%}
 
 </center>
 
@@ -163,10 +165,10 @@ Histogram for each group per metric.
 ### Group 2: most representative example
 
   <center>
-![](images/OTM/film-Modif-Two-OTM-id-1411-14875-20120503-20120503-cl-2.gif){width=40%}  ![](images/OTM/VariableSeries-id-1411-14875-20120503-20120503-cl-2-DISTANCE.gif){width=40%}
+![](images/OTM/film-Modif-Two-OTM-id-1399-25038-20120420-20120420-cl-2.gif){width=40%}  ![](images/OTM/VariableSeries-id-1399-25038-20120420-20120420-cl-2-DISTANCE.gif){width=40%}
 
-![](images/OTM/VariableSeries-id-1411-14875-20120503-20120503-cl-2-DItheta.gif){width=40%} 
-![](images/OTM/VariableSeries-id-1411-14875-20120503-20120503-cl-2-DId.gif){width=40%}
+![](images/OTM/VariableSeries-id-1399-25038-20120420-20120420-cl-2-DItheta.gif){width=40%} 
+![](images/OTM/VariableSeries-id-1399-25038-20120420-20120420-cl-2-DId.gif){width=40%}
 
 </center>
 
@@ -174,10 +176,10 @@ Histogram for each group per metric.
 ### Group 3: most representative example
 
   <center>
-![](images/OTM/film-Modif-Two-OTM-id-14882-14899-20120402-20120402-cl-3.gif){width=40%}  ![](images/OTM/VariableSeries-id-14882-14899-20120402-20120402-cl-3-DISTANCE.gif){width=40%}
+![](images/OTM/film-Modif-Two-OTM-id-5003-15040-20131111-20131111-cl-3.gif){width=40%}  ![](images/OTM/VariableSeries-id-5003-15040-20131111-20131111-cl-3-DISTANCE.gif){width=40%}
 
-![](images/OTM/VariableSeries-id-14882-14899-20120402-20120402-cl-3-DItheta.gif){width=40%} 
-![](images/OTM/VariableSeries-id-14882-14899-20120402-20120402-cl-3-DId.gif){width=40%}
+![](images/OTM/VariableSeries-id-5003-15040-20131111-20131111-cl-3-DItheta.gif){width=40%} 
+![](images/OTM/VariableSeries-id-5003-15040-20131111-20131111-cl-3-DId.gif){width=40%}
 
 </center>
 
