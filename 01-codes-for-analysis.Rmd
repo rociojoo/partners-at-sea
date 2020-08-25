@@ -28,7 +28,6 @@ library(viridis)
 library(dplyr) # filter, mutate
 library(Rmixmod)
 library(FactoMineR)
-library(parallel)
 library(tidyr) # gather
 library(mvtnorm) # for overlap index
 
@@ -72,32 +71,26 @@ dyads %>%  filter(gear.1 == "PTM") %>% select(variables) -> dta
 strat <-
 mixmodStrategy(algo = "EM", initMethod = "smallEM")
 
-# Calculate the number of cores
-free_cores <- 2
-no_cores <- detectCores() - free_cores # leave 4 free
-# Initiate cluster
-cl <- makeCluster(no_cores, type = "FORK")
-# Then parallel GMM with the 3 metrics, for 3 clusters
+# Then GMM with the 3 metrics, for 3 clusters
 N_rep <- 30 # number of replicates
-test <- parLapply(cl, 1:N_rep, # 20 replicates
-function(x) {
-res1 <-
-mixmodCluster(
-data = as.data.frame(dta[, 1:3]),
-nbCluster = 3,
-strategy = strat,
-criterion = c("ICL"),
-models = mixmodGaussianModel(
-family = "general",
-free.proportions = TRUE,
-equal.proportions = FALSE,
-listModels =
-c("Gaussian_pk_Lk_Ck")
-)
-)
-return(res1)
-})
-stopCluster(cl)
+test <- list()
+for(i in 1:N_rep){
+  test[[i]] <-
+    Rmixmod::mixmodCluster(
+      data = as.data.frame(dta[, 1:3]),
+      nbCluster = 3,
+      strategy = strat,
+      criterion = c("ICL"),
+      models = Rmixmod::mixmodGaussianModel(
+        family = "general",
+        free.proportions = TRUE,
+        equal.proportions = FALSE,
+        listModels =
+          c("Gaussian_pk_Lk_Ck")
+      )
+    )
+  
+}
 
 # choosing the best model from the replicates based on ICL
 BestModel <-
@@ -519,6 +512,7 @@ vms_data_2012 <- data.trajectories$DATA.TRAJECTORIES
 load(paste0(dossier.data.outputs,'DATA_TRAJECTORIES_YEAR_2013_GAP_3H.rdata'))
 vms_data_2013 <- data.trajectories$DATA.TRAJECTORIES
 vms_trawlers <- rbind.data.frame(vms_data_2012, vms_data_2013)
+old_names <- colnames(vms_trawlers)
 colnames(vms_trawlers) <- c("x", "y", "date", old_names[4:8],
                              "abs.angle", old_names[10], "id", "burst",
                              old_names[13:30], "gear.maree", old_names[32],

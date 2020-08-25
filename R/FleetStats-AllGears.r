@@ -74,10 +74,6 @@ Fleet.Analysis <- function(vms.data,dyads,dossier.data.outputs,dossier.stats.out
   barplot(prop.table(table(degree(g))),main='')
   dev.off()
   
-  deg.data <- degree(g) # to how many vessels are they connected to each
-  Degree.Vessel <- cbind.data.frame(Vessel=as.numeric(names(deg.data)),degree=deg.data)
-  rownames(Degree.Vessel) <- NULL
-
   if (length(Loyalty)==0){
     Loyalty <- 0
   }
