@@ -1,0 +1,27 @@
+# R Session Information
+
+
+```{r packages, echo = FALSE, eval=TRUE}
+library(knitr)
+library(lubridate) # date function
+library(magrittr) # pipes
+library(stringr) #str_replace_all
+library(ggplot2) 
+library(xtable)
+library(maps) # get background
+library(maptools) # map2SpatialPolygons
+library(mapdata) # worldHires
+library(animation) # videos
+library(igraph) # network representation
+library(viridis)
+library(dplyr) # filter, mutate
+library(Rmixmod)
+library(FactoMineR)
+library(tidyr) # gather
+library(mvtnorm) # for overlap index
+```
+
+```{r details, echo = TRUE, eval=TRUE}
+devtools::session_info()
+```
+
