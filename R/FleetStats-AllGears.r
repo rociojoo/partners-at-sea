@@ -64,6 +64,7 @@ Fleet.Analysis <- function(vms.data,dyads,dossier.data.outputs,dossier.stats.out
       width=24,height=20,pointsize = 20)
   plot(g, layout=layout1, vertex.label.dist = 0.5, vertex.label=NA)
   dev.off()
+  
   Din <- table(degree(g, mode=c("all"))) # think about in, out and total # when you care about direction
   Loyalty <- Din[names(Din) == "1"]/sum(Din[as.numeric(names(Din))>0]) # loyalty
   Trans <-  transitivity(g) # clustering coef (seems to make sense but cannot interpret it perfectly)
@@ -74,6 +75,34 @@ Fleet.Analysis <- function(vms.data,dyads,dossier.data.outputs,dossier.stats.out
   barplot(prop.table(table(degree(g))),main='')
   dev.off()
   
+  # For loyalty, remove vessels with just one dyad
+  mat.counts.cl.non.one <- mat.counts.cl.non.zero 
+  # mat.counts.cl.non.one[mat.counts.cl.non.zero == 1] <- 0
+  dim1_one <- which(apply(mat.counts.cl.non.one,MARGIN=1,FUN=sum) == 1)
+  dim2_one <- which(apply(mat.counts.cl.non.one,MARGIN=2,FUN=sum) == 1)
+  ind_one <-  intersect(dim1_one, dim2_one)
+  if (length(ind_one) > 0){
+    mat.counts.cl.non.one <- mat.counts.cl.non.one[-ind_one,-ind_one]
+  }
+  # after that, there could be zeros
+  dim1_zero <- which(apply(mat.counts.cl.non.one,MARGIN=1,FUN=sum) == 0)
+  dim2_zero <- which(apply(mat.counts.cl.non.one,MARGIN=2,FUN=sum) == 0)
+  ind_zero <-  intersect(dim1_zero, dim2_zero)
+  if (length(ind_zero) > 0){
+    mat.counts.cl.non.one <- mat.counts.cl.non.one[-ind_zero,-ind_zero]
+  }
+  
+  set.seed(3952)
+  g.matrix <- graph.adjacency(mat.counts.cl.non.one, weighted=T, mode = "lower",diag = FALSE)
+  g1 <- simplify(g.matrix)
+  Din1 <- table(degree(g1, mode=c("all"))) # think about in, out and total # when you care about direction
+  Loyalty <- Din1[names(Din1) == "1"]/sum(Din1[as.numeric(names(Din1))>0]) # loyalty
+  
+  deg.data <- degree(g) # to how many vessels are they connected to each
+  Degree.Vessel <- cbind.data.frame(Vessel=as.numeric(names(deg.data)),degree=deg.data)
+  rownames(Degree.Vessel) <- NULL
+  stats.bat <- merge(x = stats.bat,y=Degree.Vessel)
+  
   if (length(Loyalty)==0){
     Loyalty <- 0
   }
@@ -82,5 +111,6 @@ Fleet.Analysis <- function(vms.data,dyads,dossier.data.outputs,dossier.stats.out
   
   print(paste0('Loyalty: ',round(Loyalty,2)))
   print(paste0('Loyal vessels: ', Din[names(Din) == "1"]))
+  print(paste0('Loyal vessels with more than one dyad: ', Din1[names(Din1) == "1"]))
 }
 
