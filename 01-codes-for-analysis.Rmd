@@ -32,7 +32,7 @@ library(tidyr) # gather
 library(mvtnorm) # for overlap index
 
 dossier.data.outputs <- './DataOutputs/' 
-dossier.stats.outputs <- './StatsPlots/' 
+dossier.stats.outputs <- './images/' 
 dossier.codes <- './R/'
 
 
@@ -78,7 +78,7 @@ for(i in 1:N_rep){
   test[[i]] <-
     Rmixmod::mixmodCluster(
       data = as.data.frame(dta[, 1:3]),
-      nbCluster = 3,
+      nbCluster = 2:4,
       strategy = strat,
       criterion = c("ICL"),
       models = Rmixmod::mixmodGaussianModel(
@@ -116,6 +116,19 @@ paste0(variables, collapse = '-'),
 var_par <- BestModel@bestResult@parameters@variance
 # var_par is a list with a number of elements equal to the number of clusters, and each element is a variance matrix for the metrics (for a given cluster)
 # we'll pay attention to the variances and not covariances, so we'll use the list to make a matrix where each column is a metric and each row is a cluster, and each element ij is the variance of the metric j in cluster i.
+# if we wanted correlations:
+correlation_list <- lapply(var_par, function(x){
+  y <- matrix(NA,ncol=ncol(x),nrow = ncol(x))
+  for (i in 1:ncol(x)){
+    for (j in 1:ncol(x)){
+      if (i != j){
+        y[i,j] <- x[i,j]/(sqrt(x[i,i])*sqrt(x[j,j]))
+      }
+    }
+  }
+  return(y)
+})
+
 variances <-
 t(sapply(BestModel@bestResult@parameters@variance, function(mat_) {
 diag(mat_)
