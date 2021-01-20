@@ -78,7 +78,7 @@ for(i in 1:N_rep){
   test[[i]] <-
     Rmixmod::mixmodCluster(
       data = as.data.frame(dta[, 1:3]),
-      nbCluster = 2:4,
+      nbCluster = 3,
       strategy = strat,
       criterion = c("ICL"),
       models = Rmixmod::mixmodGaussianModel(
